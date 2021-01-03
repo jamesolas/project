@@ -1,0 +1,24 @@
+package com.app.service.impl;
+
+import com.app.dao.CustomerCrudDAO;
+import com.app.dao.impl.CustomerCrudDAOImpl;
+import com.app.exception.BusinessException;
+import com.app.model.Customer;
+import com.app.service.CustomerCrudService;
+
+public class CustomerCrudServiceImpl implements CustomerCrudService {
+
+	private CustomerCrudDAO customerCrudDAO = new CustomerCrudDAOImpl();
+
+	@Override
+	public Customer createCustomerFirstName(String customerFirstName) throws BusinessException {
+		Customer customer = null;
+		if(customerFirstName.length() > 0 && customerFirstName.length() < 10) {
+			customer = customerCrudDAO.createCustomerFirstName(customerFirstName);
+		}
+		
+		return customer;
+	}
+	
+	
+}

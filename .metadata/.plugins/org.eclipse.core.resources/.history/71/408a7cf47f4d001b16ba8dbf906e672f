@@ -1,0 +1,415 @@
+{INFO}  com.app.main.bankingMain  Welcom to the banking app.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Please select a choice.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      2)Customer login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      3)Employee Login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain                4)Exit  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Create a new Account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Enter your first name.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Enter your last name.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Please select a choice.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      2)Customer login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      3)Employee Login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain                4)Exit  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Welcom to the banking app.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Please select a choice.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      2)Customer login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      3)Employee Login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain                4)Exit  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Create a new Account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Enter your first name.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Enter your last name.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Enter your email address.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain     Enter a password.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Please select a choice.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      2)Customer login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      3)Employee Login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain                4)Exit  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Welcom to the banking app.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Please select a choice.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      2)Customer login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      3)Employee Login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain                4)Exit  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Create a new Account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Enter your first name.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Enter your last name.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Enter your email address.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain     Enter a password.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Please select a choice.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      2)Customer login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      3)Employee Login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain                4)Exit  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Welcom to the banking app.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Please select a choice.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      2)Customer login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      3)Employee Login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain                4)Exit  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Create a new Account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Enter your first name.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Enter your last name.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Enter your email address.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain     Enter a password.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Please select a choice.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      2)Customer login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      3)Employee Login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain                4)Exit  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Welcom to the banking app.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Please select a choice.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      2)Customer login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      3)Employee Login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain                4)Exit  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Create a new Account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Enter your first name.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Enter your last name.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Enter your email address.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain     Enter a password.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Please select a choice.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      2)Customer login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      3)Employee Login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain                4)Exit  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Welcom to the banking app.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Please select a choice.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      2)Customer login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      3)Employee Login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain                4)Exit  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Welcom to the banking app.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Please select a choice.  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      2)Customer login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain      3)Employee Login  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain                4)Exit  %20"dd=MM-yyyy z HH:mm}
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 14:13
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 14:13
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 14:13
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 14:13
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 14:13
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 14:13
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 14:13
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 14:13
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  02-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 14:26
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 14:37
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 16:49
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 16:56
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 16:56
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 16:56
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 16:56
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 16:56
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 16:56
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 16:56
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 16:56
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 16:57
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 16:57
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 16:57
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  02-01-2021 PST 16:57
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 16:57
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 16:57
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 16:57
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 16:57
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 16:57
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 18:02
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 18:02
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 18:02
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 18:02
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 18:02
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 18:02
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 18:02
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 18:02
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 18:02
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 18:02
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 18:03
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 18:03
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 18:03
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 18:03
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 18:03
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 18:03
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain   Invalid menu option  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 18:24
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 18:28
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 18:28
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 18:28
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 18:28
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 18:28
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 18:28
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 18:28
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 18:28
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 18:28
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 18:28
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 18:28
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 18:28
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 18:28
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 18:28
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 18:28
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 18:28
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  02-01-2021 PST 18:29
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 18:30
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain  customer created successfully  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 18:32
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain  customer created successfully  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 18:41
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 19:54
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 19:54
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 19:54
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 19:54
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 19:54
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 19:54
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 19:54
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 19:54
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 19:54
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 19:54
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 19:55
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  02-01-2021 PST 19:55
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  java.lang.ClassNotFoundException: org.postresql.Driver  02-01-2021 PST 19:55
+{INFO}  com.app.main.bankingMain  Internal error occured. Please contact admin.  02-01-2021 PST 19:55
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 19:55
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 19:55
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 19:55
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 19:55
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 19:55
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  02-01-2021 PST 20:08
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  java.lang.ClassNotFoundException: org.postresql.Driver  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain  Internal error occured. Please contact admin.  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 20:08
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 20:09
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 20:09
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 20:09
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 20:09
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 20:09
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 20:09
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 20:10
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 20:10
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 20:10
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 20:10
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 20:10
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  02-01-2021 PST 20:10
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  java.lang.ClassNotFoundException: org.postresql.Driver  02-01-2021 PST 20:10
+{INFO}  com.app.main.bankingMain  Internal error occured. Please contact admin.  02-01-2021 PST 20:10
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 20:10
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 20:10
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 20:10
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 20:10
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 20:10
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  02-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 20:19
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 20:19
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 20:19
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 20:19
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 20:19
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 20:19
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 20:19
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 20:19
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 20:19
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 20:19
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 20:19
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  02-01-2021 PST 20:19
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain   Invalid menu option  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain  Create a new Account  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain  Enter your first name.  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain  Enter your last name.  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain  Enter your email address.  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain     Enter a password.  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  02-01-2021 PST 20:29
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  org.postgresql.util.PSQLException: ERROR: syntax error at or near "email"
+  Position: 83  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain  Internal error occured. Please contact admin.  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain      2)Customer login  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-01-2021 PST 20:29
+{INFO}  com.app.main.bankingMain                4)Exit  02-01-2021 PST 20:29

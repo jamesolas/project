@@ -1,0 +1,91 @@
+package com.app.main;
+
+import java.util.Scanner;
+
+import org.apache.log4j.Logger;
+
+import com.app.dao.impl.CustomerCrudDAOImpl;
+import com.app.exception.BusinessException;
+import com.app.model.Customer;
+import com.app.service.CustomerCrudService;
+import com.app.service.impl.CustomerCrudServiceImpl;
+
+public class bankingMain {
+	private static Logger log = Logger.getLogger(bankingMain.class); 
+	//CustomerCrudDAOImpl dao = new CustomerCrudDAOImpl(); 
+	
+	public static void main(String[] args) {
+		CustomerCrudService customerCrudService = new CustomerCrudServiceImpl();
+		Scanner sc = new Scanner(System.in);
+		log.info("Welcom to the banking app.");
+		int ch = 0;
+	
+		do {
+			log.info("Please select a choice.");
+			log.info("1)Apply for a new account");
+			log.info("2)Customer login");
+			log.info("3)Employee Login");
+			log.info("4)Exit");
+			
+			try {ch = Integer.parseInt(sc.nextLine());
+			}catch(NumberFormatException e) {}
+			
+			switch(ch) {
+			case 1: log.info("Create a new Account");
+			log.info("Enter your first name.");
+				try {
+					String customerFirstName = sc.nextLine();						
+					//Customer customer = customerCrudService.createCustomerFirstName(customerFirstName);
+					}catch(BusinessException e) {
+						log.info(e.getMessage());
+					}
+				try {
+					String customerLastName = sc.nextLine();
+					log.info("Enter your last name.");
+					//Customer customer = customerCrudService.createCustomerLastName(customerLastName);
+				}catch(BusinessException e) {
+					log.info(e.getMessage());
+				}
+				
+				try {
+					String customerEmail = sc.nextLine();
+					log.info("Enter your email address.");
+					//Customer customer = customerCrudService.createCustomerEmail(customerEmail);
+				}catch(BusinessException e) {
+					log.info(e.getMessage());
+				}
+				
+				try {
+					String customerPassword = sc.nextLine();
+					log.info("Enter a password.");
+					//Customer customer = customerCrudService.createCustomerPassword(customerPassword);
+				}catch(BusinessException e) {
+					log.info(e.getMessage());
+				}
+				
+				try {
+					String customerDob = sc.nextLine();
+					log.info("Enter your date of birth.");
+					Customer customer = customerCrudService.createCustomerDob(customerDob);
+				}catch(BusinessException e) {
+					log.info(e.getMessage());
+				}
+				
+				//Customer customer = new Customer(customerFirstName, customerLastName, customerEmail, customerPassword, customerDob);
+					
+			break;
+			case 2:
+			
+			break;	
+			case 3:
+			
+			break;
+			case 4:
+			
+			break;
+			default: log.info("Invalid menu option");
+			break;	
+			}
+	}while(ch != 4);
+}
+}

@@ -1,0 +1,48 @@
+package com.app.main;
+
+import java.util.Scanner;
+
+import org.apache.log4j.Logger;
+
+public class bankingMain {
+	private static Logger log = Logger.getLogger(bankingMain.class);
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		log.info("Welcom to the banking app.");
+		int ch = 0;
+		
+		do {
+			log.info("Please select a choice.");
+			log.info("1)Apply for a new account");
+			log.info("2)Customer login");
+			log.info("3)Employee Login");
+			log.info("4)Exit");
+			
+			try {ch = Integer.parseInt(sc.nextLine());
+			}catch(NumberFormatException e) {}
+			
+			switch(ch) {
+			case 1: log.info("Create a new Account");
+			log.info("Enter your first name.");
+				try {
+					String customer_firstName = sc.nextLine();
+					}
+				
+					
+			break;
+			case 2:
+			
+			break;	
+			case 3:
+			
+			break;
+			case 4:
+			
+			break;
+			default: log.info("Invalid menu option");
+			break;	
+			}
+	}while(ch != 4);
+}
+}

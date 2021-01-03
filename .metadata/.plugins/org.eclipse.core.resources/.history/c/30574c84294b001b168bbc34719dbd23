@@ -1,0 +1,133 @@
+package com.app.model;
+
+import java.util.Date;
+
+public class Customer {
+	private int customer_id;
+	private int customerFirstName;
+	private int customerLastName;
+	private int customer_age;
+	private int customer_email;
+	private int account_number;
+	private Date dob;
+	
+	public Customer(int customer_id, int customerFirstName, int customerLastName, int customer_age,
+			int customer_email, int account_number, Date dob) {
+		super();
+		this.customer_id = customer_id;
+		this.customerFirstName = customerFirstName;
+		this.customerLastName = customerLastName;
+		this.customer_age = customer_age;
+		this.customer_email = customer_email;
+		this.account_number = account_number;
+		this.dob = dob;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + account_number;
+		result = prime * result + customer_age;
+		result = prime * result + customer_email;
+		result = prime * result + customerFirstName;
+		result = prime * result + customer_id;
+		result = prime * result + customerLastName;
+		result = prime * result + ((dob == null) ? 0 : dob.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Customer other = (Customer) obj;
+		if (account_number != other.account_number)
+			return false;
+		if (customer_age != other.customer_age)
+			return false;
+		if (customer_email != other.customer_email)
+			return false;
+		if (customerFirstName != other.customerFirstName)
+			return false;
+		if (customer_id != other.customer_id)
+			return false;
+		if (customerLastName != other.customerLastName)
+			return false;
+		if (dob == null) {
+			if (other.dob != null)
+				return false;
+		} else if (!dob.equals(other.dob))
+			return false;
+		return true;
+	}
+
+	public int getCustomer_id() {
+		return customer_id;
+	}
+
+	public void setCustomer_id(int customer_id) {
+		this.customer_id = customer_id;
+	}
+
+	public int getcustomerFirstName() {
+		return customerFirstName;
+	}
+
+	public void setcustomerFirstName(int customerFirstName) {
+		this.customerFirstName = customerFirstName;
+	}
+
+	public int getcustomerLastName() {
+		return customerLastName;
+	}
+
+	public void setcustomerLastName(int customerLastName) {
+		this.customerLastName = customerLastName;
+	}
+
+	public int getCustomer_age() {
+		return customer_age;
+	}
+
+	public void setCustomer_age(int customer_age) {
+		this.customer_age = customer_age;
+	}
+
+	public int getCustomer_email() {
+		return customer_email;
+	}
+
+	public void setCustomer_email(int customer_email) {
+		this.customer_email = customer_email;
+	}
+
+	public int getAccount_number() {
+		return account_number;
+	}
+
+	public void setAccount_number(int account_number) {
+		this.account_number = account_number;
+	}
+
+	public Date getDob() {
+		return dob;
+	}
+
+	public void setDob(Date dob) {
+		this.dob = dob;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [customer_id=" + customer_id + ", customerFirstName=" + customerFirstName
+				+ ", customerLastName=" + customerLastName + ", customer_age=" + customer_age + ", customer_email="
+				+ customer_email + ", account_number=" + account_number + ", dob=" + dob + "]";
+	}
+	
+
+}

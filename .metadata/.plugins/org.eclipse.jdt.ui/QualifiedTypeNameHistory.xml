@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.logging.Logger"/>
+    <fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="com.app.dao.CustomerSearchDAO"/>
+    <fullyQualifiedTypeName name="com.app.exception.BusinessException"/>
+    <fullyQualifiedTypeName name="com.app.model.Customer"/>
+    <fullyQualifiedTypeName name="com.app.service.impl.CustomerCrudServiceImpl"/>
+    <fullyQualifiedTypeName name="com.app.dao.CustomerCrudDAO"/>
+    <fullyQualifiedTypeName name="com.app.dao.dbutil.PostresqlConnection"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="com.app.service.CustomerCrudService"/>
+    <fullyQualifiedTypeName name="com.app.dao.impl.CustomerCrudDAOImpl"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+</qualifiedTypeNameHistroy>
