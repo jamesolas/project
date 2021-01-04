@@ -1,0 +1,170 @@
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 18:36
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 18:36
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 18:36
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 18:36
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 18:36
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 18:36
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 18:36
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 18:36
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 18:36
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 18:36
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  org.postgresql.util.PSQLException: ERROR: column "customerpassword" of relation "customer" does not exist
+  Position: 82  03-01-2021 PST 18:36
+{INFO}  com.app.main.bankingMain  Internal error occured. Please contact admin.  03-01-2021 PST 18:36
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 18:36
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 18:36
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 18:36
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 18:36
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 18:36
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 18:37
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 18:37
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 18:37
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 18:37
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 18:37
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 18:37
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 18:37
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 18:37
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 18:37
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 18:37
+{INFO}  com.app.main.bankingMain  customer created successfully  03-01-2021 PST 18:37
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 18:37
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 18:37
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 18:37
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 18:37
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 18:37
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 20:17
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 20:17
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 20:17
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 20:17
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 20:17
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 20:17
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 20:17
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 20:17
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 20:17
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain  Enter a starting balance.  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain  Enter a starting balance.  03-01-2021 PST 20:18
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  org.postgresql.util.PSQLException: The column index is out of range: 1, number of columns: 0.  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain  Inernal error occured. Please contact admin.  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 20:18
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 20:23
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 20:23
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 20:23
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 20:23
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 20:23
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 20:23
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  Enter a starting balance.  03-01-2021 PST 20:24
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  org.postgresql.util.PSQLException: ERROR: relation "projecct.account" does not exist
+  Position: 13  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  Inernal error occured. Please contact admin.  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  Enter a starting balance.  03-01-2021 PST 20:24
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  org.postgresql.util.PSQLException: ERROR: insert or update on table "account" violates foreign key constraint "account_fk"
+  Detail: Key (customerid)=(1) is not present in table "customer".  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  Inernal error occured. Please contact admin.  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 20:24
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain  Enter a starting balance.  03-01-2021 PST 20:27
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  org.postgresql.util.PSQLException: ERROR: insert or update on table "account" violates foreign key constraint "account_fk"
+  Detail: Key (customerid)=(2) is not present in table "customer".  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain  Inernal error occured. Please contact admin.  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 20:27
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 20:34
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 20:34
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 20:34
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 20:34
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 20:34
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 20:34
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 20:34
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 20:34
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 20:34
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 20:34
+{INFO}  com.app.main.bankingMain  customer created successfully  03-01-2021 PST 20:34
+{INFO}  com.app.main.bankingMain  Enter a starting balance.  03-01-2021 PST 20:34
+{INFO}  com.app.main.bankingMain  balance created successfully  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain  customer created successfully  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain  Enter a starting balance.  03-01-2021 PST 20:35
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  org.postgresql.util.PSQLException: ERROR: insert or update on table "account" violates foreign key constraint "account_fk"
+  Detail: Key (customerid)=(4) is not present in table "customer".  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain  Inernal error occured. Please contact admin.  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 20:35
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain  customer created successfully  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain  Enter a starting balance.  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain  balance created successfully  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 21:48
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 21:48

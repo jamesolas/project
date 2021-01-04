@@ -18,4 +18,6 @@
     <fullyQualifiedTypeName name="com.app.dao.impl.CustomerCrudDAOImpl"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="org.omg.CORBA.Environment"/>
+    <fullyQualifiedTypeName name="com.app.model.CustomerAccount"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,207 @@
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 11:31
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 11:31
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 11:31
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 11:31
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 11:31
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 11:31
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 11:31
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 11:31
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 11:31
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  03-01-2021 PST 11:32
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  org.postgresql.util.PSQLException: ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (, james, olas, email, null, 12).  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain  Internal error occured. Please contact admin.  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  03-01-2021 PST 11:32
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  org.postgresql.util.PSQLException: ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (, james, olas, email, null, 13).  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain  Internal error occured. Please contact admin.  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 11:32
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 12:22
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 12:22
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 12:22
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 12:22
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 12:22
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 12:22
+{INFO}  com.app.main.bankingMain                    \n  03-01-2021 PST 12:22
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 12:22
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 12:23
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 12:23
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 12:23
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 12:23
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 12:23
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 12:23
+{INFO}  com.app.main.bankingMain                   //n  03-01-2021 PST 12:23
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 12:23
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 12:27
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 12:27
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 12:27
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 12:27
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 12:27
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 12:27
+{INFO}  com.app.main.bankingMain                     
+  03-01-2021 PST 12:27
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 12:27
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 12:27
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  03-01-2021 PST 12:37
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  org.postgresql.util.PSQLException: ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (, james, olas, email, null, 14).  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain  Internal error occured. Please contact admin.  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 12:37
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  03-01-2021 PST 13:45
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  org.postgresql.util.PSQLException: ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (, james, olas, email, null, 15).  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain  Internal error occured. Please contact admin.  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 13:45
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 14:13
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 14:13
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 14:13
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 14:13
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 14:13
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 14:13
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  03-01-2021 PST 14:14
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  org.postgresql.util.PSQLException: ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (j, , o, e, null, 16).  03-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain  Internal error occured. Please contact admin.  03-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 14:14
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 14:16
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 14:16
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 14:16
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 14:16
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 14:16
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 14:16
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 14:16
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 14:16
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 14:17
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 14:17
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  03-01-2021 PST 14:17
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  org.postgresql.util.PSQLException: ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (j, , o, e, null, 17).  03-01-2021 PST 14:17
+{INFO}  com.app.main.bankingMain  Internal error occured. Please contact admin.  03-01-2021 PST 14:17
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 14:17
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 14:17
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 14:17
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 14:17
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 14:17
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 14:18
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 14:18
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 14:18
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 14:18
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 14:18
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 14:18
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 14:18
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 14:18
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  03-01-2021 PST 14:19
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  org.postgresql.util.PSQLException: ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (j, o, e, p, null, 18).  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain  Internal error occured. Please contact admin.  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain  Wed Jan 01 00:00:00 PST 2020  03-01-2021 PST 14:28
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  org.postgresql.util.PSQLException: ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (j, o, e, p, null, 19).  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain  Internal error occured. Please contact admin.  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 14:28
+{INFO}  com.app.main.bankingMain  Welcome to the banking app.  03-01-2021 PST 14:46
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 14:46
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 14:46
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 14:46
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 14:46
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 14:46
+{INFO}  com.app.main.bankingMain  Enter your first name.  03-01-2021 PST 14:46
+{INFO}  com.app.main.bankingMain  Enter your last name.  03-01-2021 PST 14:46
+{INFO}  com.app.main.bankingMain  Enter your email address.  03-01-2021 PST 14:46
+{INFO}  com.app.main.bankingMain     Enter a password.  03-01-2021 PST 14:46
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  03-01-2021 PST 14:46
+{INFO}  com.app.main.bankingMain  Wed Jan 01 00:01:00 PST 2020  03-01-2021 PST 14:47
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  org.postgresql.util.PSQLException: ERROR: null value in column "dob" violates not-null constraint
+  Detail: Failing row contains (j, o, email, pass, null, 20).  03-01-2021 PST 14:47
+{INFO}  com.app.main.bankingMain  Internal error occured. Please contact admin.  03-01-2021 PST 14:47
+{INFO}  com.app.main.bankingMain  Please select a choice.  03-01-2021 PST 14:47
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  03-01-2021 PST 14:47
+{INFO}  com.app.main.bankingMain      2)Customer login  03-01-2021 PST 14:47
+{INFO}  com.app.main.bankingMain      3)Employee Login  03-01-2021 PST 14:47
+{INFO}  com.app.main.bankingMain                4)Exit  03-01-2021 PST 14:47

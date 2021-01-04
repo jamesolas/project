@@ -1,16 +1,22 @@
 package com.app.model;
 
-public class customerAccount {
+public class CustomerAccount {
 	private long accountNumber;
 	private long customerId;
 	private long accountBalance;
 	
-	public customerAccount(long accountNumber, long customerId, long accountBalance) {
+	public CustomerAccount(long accountNumber, long customerId, long accountBalance) {
 		super();
 		this.accountNumber = accountNumber;
 		this.customerId = customerId;
 		this.accountBalance = accountBalance;
 	}
+	
+	public CustomerAccount(long accountBalance) {
+		super();
+		this.accountBalance = accountBalance;
+	}
+	
 	public long getAccountNumber() {
 		return accountNumber;
 	}
@@ -46,7 +52,7 @@ public class customerAccount {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		customerAccount other = (customerAccount) obj;
+		CustomerAccount other = (CustomerAccount) obj;
 		if (accountBalance != other.accountBalance)
 			return false;
 		if (accountNumber != other.accountNumber)

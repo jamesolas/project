@@ -12,6 +12,7 @@ import com.app.dao.dbutil.PostresqlConnection;
 import com.app.exception.BusinessException;
 import com.app.main.bankingMain;
 import com.app.model.Customer;
+import com.app.model.CustomerAccount;
 
 public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 	
@@ -21,8 +22,8 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 	public int createCustomer(Customer customer) throws BusinessException {
 		int c = 0;
 		try(Connection connection = PostresqlConnection.getConnection()){
-			String sql = "insert into project.accountrequests(customerfirstname, customerlastname, customeremail,"
-				+" customerpassword, dob) values(?,?,?,?,?)";
+			String sql = "insert into project.customer(customerfirstname, customerlastname, customeremail,"
+				+" customerpassword) values(?,?,?,?)";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setString(1, customer.getCustomerFirstName());
 			preparedStatement.setString(2, customer.getCustomerLastName());
@@ -30,13 +31,29 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 			//Date date = Date.valueOf(
 			preparedStatement.setString(3, customer.getCustomerEmail());
 			preparedStatement.setString(4, customer.getCustomerPassword());
-			preparedStatement.setDate(5, (java.sql.Date) customer.getDob());
+			//preparedStatement.setDate(5, (java.sql.Date) customer.getDob());
 		
 			c = preparedStatement.executeUpdate();
 		
 		}catch(ClassNotFoundException | SQLException e){
 			log.info(e);
 			throw new BusinessException("Internal error occured. Please contact admin.");
+		}
+		return c;
+	}
+	
+	public int createAccount(CustomerAccount customerAccount) throws BusinessException{
+		int c = 0;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "insert into project.account(accountbalance) values(?)";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, customerAccount.getAccountBalance());
+			
+			c = preparedStatement.executeUpdate();
+			
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);;
+			throw new BusinessException("Inernal error occured. Please contact admin.");
 		}
 		return c;
 	}
