@@ -1,0 +1,18 @@
+package com.app.service;
+
+import com.app.exception.BusinessException;
+import com.app.model.Customer;
+import com.app.model.CustomerAccount;
+
+public interface CustomerCrudService {
+	
+	public Customer createCustomer(String customerFirstName,String customerLastName,String customerEmail,
+			String customerPassword) throws BusinessException;
+	public CustomerAccount createBalance(long accountBalance);
+//	public Customer createCustomerFirstName(String customerFirstName) throws BusinessException;
+//	public Customer createCustomerLastName(String customerLastName) throws BusinessException;
+//	public Customer createCustomerEmail(String customerEmail) throws BusinessException;
+//	public Customer createCustomerPassword(String customerPassword) throws BusinessException;
+//	public Customer createCustomerDob(String dob) throws BusinessException;
+	
+}

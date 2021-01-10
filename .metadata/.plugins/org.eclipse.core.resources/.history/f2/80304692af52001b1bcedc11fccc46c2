@@ -1,0 +1,176 @@
+package com.app.main;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.Scanner;
+
+import org.apache.log4j.Logger;
+import com.app.dao.CustomerSearchDAO;
+import com.app.dao.impl.CustomerCrudDAOImpl;
+import com.app.dao.impl.CustomerSearchDAOImpl;
+import com.app.exception.BusinessException;
+import com.app.model.Customer;
+import com.app.model.CustomerAccount;
+import com.app.service.CustomerCrudService;
+import com.app.service.CustomerSearchService;
+import com.app.service.impl.CustomerCrudServiceImpl;
+import com.app.service.impl.CustomerSearchServiceImpl;
+
+public class bankingMain {
+	private static Logger log = Logger.getLogger(bankingMain.class); 
+	
+	
+	public static void main(String[] args) {
+		CustomerCrudService customerCrudService = new CustomerCrudServiceImpl();
+		CustomerSearchService customerSearchService = new CustomerSearchServiceImpl();
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd");
+		Date date = new Date();
+		Scanner sc = new Scanner(System.in);
+		log.info("Welcome to the banking app.");
+		int ch = 0;
+	
+		do {
+			log.info("Please select a choice.");
+			log.info("1)Apply for a new account");
+			log.info("2)Customer login");
+			log.info("3)Employee Login");
+			log.info("4)Exit");
+			
+			String customerFirstName=null;
+			String customerLastName=null;
+			String customerEmail=null;
+			String customerPassword=null;
+			Long accountBalance=null;
+			
+			try {
+				ch = sc.nextInt();
+				sc.nextLine();
+			}catch(NumberFormatException e) {
+			}
+			
+			switch(ch) {
+			case 1:log.info("Enter your first name."); 
+							
+					customerFirstName = sc.nextLine();
+					if(customerFirstName.length() <= 0) {
+						log.info("Please enter the customer's first name.");
+					}
+						
+					log.info("Enter your last name.");
+					customerLastName = sc.nextLine();
+					if(customerLastName.length() <= 0) {
+						log.info("Please enter the customer's last name.");
+					}
+									
+					log.info("Enter your email address.");
+					customerEmail = sc.nextLine();
+					if(customerEmail.length() <= 0) {
+						log.info("Please enter an email address.");
+					}
+					
+					log.info("Enter a password.");
+					customerPassword = sc.nextLine();
+					if(customerPassword.length() <= 0) {
+						log.info("Please enter a password.");
+					}		
+				
+					//Customer customer = new Customer(customerFirstName, customerLastName, customerEmail, customerPassword);
+				try {
+					Customer customer = customerCrudService.createCustomer(customerFirstName, customerLastName, customerEmail, customerPassword);
+				} catch (BusinessException e1) {
+					e1.printStackTrace();
+				  }
+					
+					log.info("Enter a starting balance.");
+					accountBalance = sc.nextLong();
+					sc.nextLine();
+					
+					//code to service
+					CustomerAccount customerAccount = customerCrudService.createBalance(accountBalance);				
+					
+					
+			break;
+			case 2:
+//					log.info("Enter your email.");
+//					String enteredEmail = null;
+//					customerEmail = sc.nextLine();
+//					log.info("Enter your password");
+//					String enteredPassword = null;
+//					enteredPassword = sc.nextLine();
+//					try{
+//						int x = 0;
+//						//code to service
+//						Customer customer = CustomerSearchService.customerLogin(enteredEmail, enteredPassword);
+//						Customer customer2 = CustomerSearchDAO.customerLogin(customerEmail, customerPassword);
+//					}catch(BusinessException e) {
+//						log.info(e.getMessage());
+//					}
+				
+					long customerId = 1;
+					long accountNumber = 9;
+					int cm = 0;
+					do {
+					log.info("Customer Menu");
+					log.info("1)View Balance");
+					log.info("2)Deposit money");
+					log.info("3)Withdraw money");
+					log.info("4)Send money");
+					log.info("5)Receive money");
+					log.info("6)Exit");
+					
+					try {
+						cm=Integer.parseInt(sc.nextLine());
+					}catch(NumberFormatException e) {
+					}
+					switch(cm) {
+					case 1: log.info("View Balance");
+						try {
+							CustomerAccount customerAccount2 = customerSearchService.viewBalance(customerId);
+							if(customerAccount2 != null) {
+								log.info("Balance is "+customerAccount2);
+							}
+						} catch (BusinessException e) {
+							e.printStackTrace();
+						}
+					
+					break;
+					case 2: log.info("Deposit Money");
+						try {
+							CustomerAccount customerAccount2 = customerCrudService.de
+						}
+					
+					break;
+					case 3: log.info("Withdraw Money");
+					
+					break;
+					case 4: log.info("Send money");
+					
+					break;
+					case 5: log.info("Receive money");
+					
+					break;
+					case 6: log.info("Exit");
+					}
+					
+					
+					
+					
+					
+					}while(cm != 6);
+			
+			break;	
+			case 3:
+			
+			break;
+			case 4:
+			
+			break;
+			default: log.info("Invalid menu option");
+			break;	
+			}
+	}while(ch != 4);
+}
+}

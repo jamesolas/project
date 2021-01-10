@@ -1,0 +1,38 @@
+package com.app.service.impl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import org.apache.log4j.Logger;
+
+import com.app.dao.dbutil.PostresqlConnection;
+import com.app.exception.BusinessException;
+import com.app.main.bankingMain;
+import com.app.model.Customer;
+import com.app.service.CustomerSearchService;
+
+
+
+public class CustomerSearchServiceImpl implements CustomerSearchService {
+	
+	private static Logger log = Logger.getLogger(CustomerSearchServiceImpl.class);
+	
+	@Override
+	public Customer customerLogin(String customerEmail, String customerPassword) throws BusinessException {
+		Customer customer = null;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "select customeremail, customerpassword from project.customer "
+					+ "where customeremail=(?) and customerpassword=(?)";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setString(1, customerEmail);
+			preparedStatement.setString(2, customerPassword);
+		
+		}else {
+			throw new BusinessException("Username and password do not match");
+		}catach(ClassNotFoundException | SQLException e){
+			log.info(e));
+		}
+		return customer;
+	}
+
+}

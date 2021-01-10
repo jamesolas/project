@@ -9,23 +9,23 @@ public class Customer {
 	private Date customerAge;
 	private String customerEmail;
 	private String customerPassword;
-	private long accountNumber;
-	private Date dob;
+
 	
-	
-	
-	public Customer(String customerFirstName, String customerLastName, String customerEmail, String customerPassword,
-			Date dob) {
+	public Customer() {	
+	}
+
+	public Customer(String customerFirstName, String customerLastName, String customerEmail, String customerPassword) {
 		super();
 		this.customerFirstName = customerFirstName;
 		this.customerLastName = customerLastName;
 		this.customerEmail = customerEmail;
 		this.customerPassword = customerPassword;
-		this.dob = dob;
 	}
 
+
+
 	public Customer(long customerId, String customerFirstName, String customerLastName, Date customerAge,
-			String customerEmail, String customerPassword, long accountNumber, Date dob) {
+			String customerEmail, String customerPassword) {
 		super();
 		this.customerId = customerId;
 		this.customerFirstName = customerFirstName;
@@ -33,8 +33,17 @@ public class Customer {
 		this.customerAge = customerAge;
 		this.customerEmail = customerEmail;
 		this.customerPassword = customerPassword;
-		this.accountNumber = accountNumber;
-		this.dob = dob;
+	}
+
+	public Customer(long customerId) {
+		super();
+		this.customerId = customerId;
+	}
+
+	public Customer(String customerEmail, String customerPassword) {
+		super();
+		this.customerEmail = customerEmail;
+		this.customerPassword = customerPassword;
 	}
 	
 	public long getCustomerId() {
@@ -73,48 +82,27 @@ public class Customer {
 	public void setCustomerPassword(String customerPassword) {
 		this.customerPassword = customerPassword;
 	}
-	public long getAccountNumber() {
-		return accountNumber;
-	}
-	public void setAccountNumber(long accountNumber) {
-		this.accountNumber = accountNumber;
-	}
-	public Date getDob() {
-		return dob;
-	}
-	public void setDob(Date dob) {
-		this.dob = dob;
-	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + (int) (accountNumber ^ (accountNumber >>> 32));
 		result = prime * result + ((customerAge == null) ? 0 : customerAge.hashCode());
 		result = prime * result + ((customerEmail == null) ? 0 : customerEmail.hashCode());
 		result = prime * result + ((customerFirstName == null) ? 0 : customerFirstName.hashCode());
 		result = prime * result + (int) (customerId ^ (customerId >>> 32));
 		result = prime * result + ((customerLastName == null) ? 0 : customerLastName.hashCode());
 		result = prime * result + ((customerPassword == null) ? 0 : customerPassword.hashCode());
-		result = prime * result + ((dob == null) ? 0 : dob.hashCode());
+	
 		return result;
 	}
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (obj == null)
-			return false;
 		if (getClass() != obj.getClass())
 			return false;
 		Customer other = (Customer) obj;
-		if (accountNumber != other.accountNumber)
-			return false;
-		if (customerAge == null) {
-			if (other.customerAge != null)
-				return false;
-		} else if (!customerAge.equals(other.customerAge))
-			return false;
 		if (customerEmail == null) {
 			if (other.customerEmail != null)
 				return false;
@@ -137,21 +125,17 @@ public class Customer {
 				return false;
 		} else if (!customerPassword.equals(other.customerPassword))
 			return false;
-		if (dob == null) {
-			if (other.dob != null)
-				return false;
-		} else if (!dob.equals(other.dob))
-			return false;
-		return true;
+		return false;
 	}
+
 	@Override
 	public String toString() {
 		return "Customer [customerId=" + customerId + ", customerFirstName=" + customerFirstName + ", customerLastName="
 				+ customerLastName + ", customerAge=" + customerAge + ", customerEmail=" + customerEmail
-				+ ", customerPassword=" + customerPassword + ", accountNumber=" + accountNumber + ", dob=" + dob + "]";
+				+ ", customerPassword=" + customerPassword + "]";
 	}
+
 	
-	
-	
+
 
 }

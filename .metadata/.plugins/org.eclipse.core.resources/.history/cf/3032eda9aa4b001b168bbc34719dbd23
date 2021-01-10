@@ -1,8 +1,0 @@
-package com.app.service.impl;
-
-import com.app.dao.CustomerCrudDAO;
-
-public class CustomerCrudServiceImpl {
-
-	private CustomerCrudDAO customerCrudDAO = new CustomerCrudImpl();
-}

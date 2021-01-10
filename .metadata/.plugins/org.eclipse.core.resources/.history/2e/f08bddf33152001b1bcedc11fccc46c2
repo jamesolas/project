@@ -1,0 +1,11 @@
+package com.app.service;
+
+import com.app.exception.BusinessException;
+import com.app.model.Customer;
+
+public interface CustomerSearchService {
+	
+	public Customer customerLogin(String customerEmail, String customerPassword) throws BusinessException;
+	public Customer customerLogin() throws BusinessException;
+	public Customer viewBalance() throws BusinessException;
+}

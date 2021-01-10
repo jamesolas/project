@@ -1,9 +1,0 @@
-package com.app.model;
-
-public class AccountBalance {
-	private long accountNumber;
-	private long customerId;
-	private long accountBalance;
-	
-
-}

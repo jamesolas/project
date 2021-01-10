@@ -1,0 +1,10 @@
+package com.app.dao;
+
+import com.app.exception.BusinessException;
+import com.app.model.Customer;
+
+public interface CustomerSearchDAO {
+	
+	public Customer customerLogin(String customerEmail, String customerPassword) throws BusinessException;
+
+}

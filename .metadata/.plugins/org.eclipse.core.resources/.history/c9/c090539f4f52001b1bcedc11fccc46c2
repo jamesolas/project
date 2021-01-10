@@ -1,0 +1,10 @@
+package com.app.model;
+
+public class Transactions {
+	private long sendingAccountNumber;
+	private long receivingAccountNumber;
+	private long amount;
+	private long date;
+	
+	
+}

@@ -4,6 +4,9 @@ import java.sql.Connection;
 import java.util.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import org.apache.log4j.Logger;
 
@@ -13,10 +16,17 @@ import com.app.exception.BusinessException;
 import com.app.main.bankingMain;
 import com.app.model.Customer;
 import com.app.model.CustomerAccount;
+import com.app.model.TransactionRequests;
+import com.app.model.Transactions;
 
 public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 	
 	private static Logger log = Logger.getLogger(CustomerCrudDAOImpl.class);
+	
+	Transactions transactions = new Transactions();
+	
+	
+	
 
 	@Override
 	public int createCustomer(Customer customer) throws BusinessException {
@@ -27,11 +37,8 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setString(1, customer.getCustomerFirstName());
 			preparedStatement.setString(2, customer.getCustomerLastName());
-			//Date date = Date.valueOf(String.valueOf(customer.getDob()));
-			//Date date = Date.valueOf(
 			preparedStatement.setString(3, customer.getCustomerEmail());
 			preparedStatement.setString(4, customer.getCustomerPassword());
-			//preparedStatement.setDate(5, (java.sql.Date) customer.getDob());
 		
 			c = preparedStatement.executeUpdate();
 		
@@ -42,7 +49,7 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 		return c;
 	}
 	
-	public int createAccount(CustomerAccount customerAccount) throws BusinessException{
+	public int createBalance(CustomerAccount customerAccount) throws BusinessException{
 		int c = 0;
 		try(Connection connection = PostresqlConnection.getConnection()){
 			String sql = "insert into project.account(accountbalance) values(?)";
@@ -58,66 +65,91 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 		return c;
 	}
 
-	
-
 	@Override
-	public Customer createAccountBalance(long accountBalance) throws BusinessException {
-		// TODO Auto-generated method stub
-		return null;
+	public int deleteCustomer(Customer customer) throws BusinessException{
+		int c = 0;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "delete from project.customer(customerid) values(?)";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, customer.getCustomerId());
+			
+			c = preparedStatement.executeUpdate();
+			
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);;
+			throw new BusinessException("Inernal error occured. Please contact admin.");
+		}
+		return c;
 	}
-
-
-
-
-
-	@Override
-	public void deleteCustomer(Customer customer) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-
-	@Override
-	public Customer createCustomerFirstName(String customerFirstName) throws BusinessException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-
-	@Override
-	public Customer createCustomerLastName(String customerLastName) throws BusinessException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-
-	@Override
-	public Customer createCustomerEmail(String customerEmail) throws BusinessException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-
-	@Override
-	public Customer createCustomerPassword(String customerPassword) throws BusinessException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-
-	@Override
-	public Customer createCustomerDob(String dob) throws BusinessException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 	
 	
+	@Override
+	public int deposit(CustomerAccount customerAccount) throws BusinessException {
+		int c = 0;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "update project.account set accountbalance = accountbalance + ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, customerAccount.getAccountBalance());
+			
+			c = preparedStatement.executeUpdate();
+			
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);;
+			throw new BusinessException("Inernal error occured. Please contact admin.");
+		}
+		return c;
+	}
+
+	@Override
+	public int withdraw(CustomerAccount customerAccount) throws BusinessException {
+		int c = 0;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "update project.account set accountbalance = accountbalance - ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, customerAccount.getAccountBalance());
+			
+			c = preparedStatement.executeUpdate();
+			
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);;
+			throw new BusinessException("Inernal error occured. Please contact admin.");
+		}
+		return c;
+	}
 	
+	
+	@Override
+	public int sendMoney(TransactionRequests transactionRequests) throws BusinessException {
+		int c = 0;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "insert into project.transactionrequests (amount, date, sendingaccountnumber, receivingaccountnumber) values(?,?,?,?)";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, transactionRequests.getAmount());
+			preparedStatement.setDate(2, java.sql.Date.valueOf(java.time.LocalDate.now()));
+			preparedStatement.setLong(3, transactionRequests.getSendingAccount());
+			preparedStatement.setLong(4, transactionRequests.getReceivingAccount());
+			
+			c = preparedStatement.executeUpdate();
+			
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);;
+			throw new BusinessException("Inernal error occured. Please contact admin.");
+		}
+		return c;
+	}
+
+	@Override
+	public int receiveMoney(CustomerAccount customerAccount) throws BusinessException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+
+
+
+
+
+
 
 }

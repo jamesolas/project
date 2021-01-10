@@ -1,0 +1,26 @@
+package com.app.service.impl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.app.dao.dbutil.PostresqlConnection;
+import com.app.exception.BusinessException;
+import com.app.model.Customer;
+import com.app.service.CustomerSearchService;
+
+public class CustomerSearchServiceImpl implements CustomerSearchService {
+	
+	@Override
+	public Customer customerLogin(String customerEmail, String customerPassword) throws BusinessException {
+		Customer customer = null;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "select customeremail, customerpassword from project.customer "
+					+ "where customeremail=(?) and customerpassword=(?)";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setString(1, customerEmail);
+			preparedStatement.setString(2, customerPassword);
+		return customer;
+		}
+	}
+
+}

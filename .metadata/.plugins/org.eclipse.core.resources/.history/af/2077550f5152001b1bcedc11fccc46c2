@@ -1,0 +1,17 @@
+package com.app.service;
+
+import com.app.exception.BusinessException;
+import com.app.model.Customer;
+import com.app.model.CustomerAccount;
+
+public interface CustomerCrudService {
+	
+	public Customer createCustomer(String customerFirstName,String customerLastName,String customerEmail,
+			String customerPassword) throws BusinessException;
+	public CustomerAccount createBalance(long accountBalance) throws BusinessException;
+	public CustomerAccount deposit(long accountBalance) throws BusinessException;
+	public CustomerAccount withdraw(long accountBalance) throws BusinessException;
+	public CustomerAccount sendMoney(long accountBalance, receivingAccountNumber) throws BusinessException;
+	public CustomerAccount receiveMoney(long accountBalance) throws BusinessException;
+	
+}

@@ -1,0 +1,17 @@
+package com.app.dao;
+
+import com.app.exception.BusinessException;
+import com.app.model.Customer;
+import com.app.model.CustomerAccount;
+
+public interface CustomerCrudDAO {
+	
+	public int createCustomer(Customer customer) throws BusinessException;
+	public int createBalance(CustomerAccount customerAccount) throws BusinessException;
+	public void deleteCustomer(Customer customer)throws BusinessException;
+	public CustomerAccount deposit(Customer customerAccount) throws BusinessException;
+	public CustomerAccount withdraw(Customer customerAccount) throws BusinessException;
+	public CustomerAccount sendMoney(Customer customerAccount) throws BusinessException;
+	public CustomerAccount receiveMoney(Customer customerAccount) throws BusinessException;
+	
+}

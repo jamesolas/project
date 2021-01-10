@@ -1,9 +1,0 @@
-package com.app.dao.impl;
-
-public class CustomerSearchDAOImpl {
-
-	public CustomerSearchDAOImpl() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

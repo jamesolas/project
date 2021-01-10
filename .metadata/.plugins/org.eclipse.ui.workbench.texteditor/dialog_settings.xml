@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="customerId"/>
+		<item key="selection" value="transactionRequests"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="customerAccount"/>
+			<item value="LocalDateTime"/>
+			<item value="entered"/>
+			<item value="accountNumber"/>
+			<item value="Crud"/>
+			<item value="First"/>
 			<item value="customer_id"/>
 			<item value="account_number"/>
 			<item value="customer_email"/>
@@ -17,6 +23,12 @@
 			<item value="system.out.println"/>
 		</list>
 		<list key="replacehistory">
+			<item value="transactionRequests"/>
+			<item value="Date"/>
+			<item value="customer"/>
+			<item value="Search"/>
+			<item value="Service"/>
+			<item value="Last"/>
 			<item value="customerId"/>
 			<item value="accountNumber"/>
 			<item value="customerEmail"/>
