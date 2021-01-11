@@ -6,7 +6,6 @@ import com.app.model.CustomerAccount;
 
 public interface CustomerSearchService {
 	
-	//public Customer customerLogin(String customerEmail, String customerPassword) throws BusinessException;
 	public Customer customerLogin(String customerEmail, String customerPassword) throws BusinessException;
 	public CustomerAccount viewBalance(long customerId) throws BusinessException;
 	public CustomerAccount deposit(long customerId) throws BusinessException;
@@ -16,4 +15,5 @@ public interface CustomerSearchService {
 	public CustomerAccount viewIncoming(long custumerId) throws BusinessException;
 	public String findCustomerId(String customerEmail) throws BusinessException;
 	public long findAccountNumber(long customerId) throws BusinessException;
+	public long findBalance(long customerId) throws BusinessException;
 }

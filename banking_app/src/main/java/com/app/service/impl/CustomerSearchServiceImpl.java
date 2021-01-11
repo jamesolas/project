@@ -64,6 +64,17 @@ public class CustomerSearchServiceImpl implements CustomerSearchService {
 		return longId2;
 	}
 	
+	@Override
+	public long findBalance(long customerId) throws BusinessException {
+		long longId2 = 0;
+		if(customerId > 0) {
+			//code to DAO
+			longId2 = customerSearchDAO.findBalance(customerId);
+		}
+		
+		return longId2;
+	}
+	
 
 
 	@Override
@@ -95,6 +106,8 @@ public class CustomerSearchServiceImpl implements CustomerSearchService {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	
 
 	
 	

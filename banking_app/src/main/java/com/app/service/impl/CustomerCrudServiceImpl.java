@@ -1,15 +1,13 @@
 package com.app.service.impl;
 
-import com.app.dao.CustomerCrudDAO;
 import com.app.dao.impl.CustomerCrudDAOImpl;
 import com.app.exception.BusinessException;
-import com.app.main.bankingMain;
 import com.app.model.Customer;
 import com.app.model.CustomerAccount;
 import com.app.model.TransactionRequests;
+import com.app.model.Transactions;
 import com.app.service.CustomerCrudService;
 
-import java.time.LocalDateTime;
 import java.util.Date;
 
 import org.apache.log4j.Logger;
@@ -22,12 +20,12 @@ public class CustomerCrudServiceImpl implements CustomerCrudService {
 
 	@Override
 	public Customer createCustomer(String customerFirstName, String customerLastName, String customerEmail,
-			String customerPassword) throws BusinessException {
+			String customerPassword, Date customerDob) throws BusinessException {
 		Customer customer = null;
-		//customer = customerCrudDAO.createCustomer(customerFirstName, customerLastName, customerEmail, customerPassword);
+		//customer = customerCrudDAO.createCustomer(customerFirstName, customerLastName, customerEmail, customerPassword,);
 		
 		//code to DAO
-		Customer c = new Customer(customerFirstName, customerLastName, customerEmail, customerPassword);
+		Customer c = new Customer(customerFirstName, customerLastName, customerEmail, customerPassword, customerDob);
 		if(dao.createCustomer(c) != 0) {
 			log.info("Customer created successfully.");
 		}
@@ -50,13 +48,16 @@ public class CustomerCrudServiceImpl implements CustomerCrudService {
 	}
 
 	@Override
-	public CustomerAccount deposit(long customerId, long amount) throws BusinessException {
+	public CustomerAccount deposit(long amount, long customerId) throws BusinessException {
 		CustomerAccount customerAccount = null;
 		//code to DAO
-		CustomerAccount c = new CustomerAccount(customerId, amount);
+		CustomerAccount c = new CustomerAccount(amount, customerId);
+
 		try {
 			if(dao.deposit(c) != 0) {
 				log.info("Deposit was successful.");
+			}else {
+				log.info("Deposit was not successful");
 			}
 		} catch (BusinessException e) {
 			log.info(e.getMessage());
@@ -65,13 +66,15 @@ public class CustomerCrudServiceImpl implements CustomerCrudService {
 	}
 
 	@Override
-	public CustomerAccount withdraw(long customerId, long amount) throws BusinessException {
+	public CustomerAccount withdraw(long amount, long customerId) throws BusinessException {
 		CustomerAccount customerAccount = null;
 		//code to DAO
-		CustomerAccount c = new CustomerAccount(customerId, amount);
+		CustomerAccount c = new CustomerAccount(amount, customerId);
 		try {
 			if(dao.withdraw(c) != 0) {
 				log.info("Withdrawal was successful.");
+			}else {
+				log.info("Deposit was not successful");
 			}
 		} catch (BusinessException e) {
 			log.info(e.getMessage());
@@ -122,6 +125,23 @@ public class CustomerCrudServiceImpl implements CustomerCrudService {
 			log.info(e.getMessage());
 		}		
 		return customer;
+	}
+
+	@Override
+	public Transactions updateTransactions(long amount, long accountNumber) throws BusinessException {
+		Transactions transactions = null;
+		//code to DAO
+		Transactions c = new Transactions(amount, accountNumber);
+		try {
+			if(dao.updateTransactions(c) != 0) {
+				log.info("Updating the transactions log was successful.");
+			}else {
+				log.info("Updating transactions log was not successful.");
+			}
+		} catch (BusinessException e) {
+			log.info(e.getMessage());
+		}		
+		return transactions;
 	}
 	
 

@@ -1,16 +1,16 @@
 package com.app.model;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 public class CustomerAccount {
-	private long accountNumber;
-	private long customerId;
+	private long accountNumber;	
 	private long accountBalance;
 	private long amount;
 	private LocalDateTime date;
+	private long customerId;
 	
 	
+
 	public CustomerAccount() {
 	}
 
@@ -31,16 +31,21 @@ public class CustomerAccount {
 		this.amount = amount;
 	}
 
-	public CustomerAccount(long customerId, long accountBalance) {
+
+	public CustomerAccount(long amount, long customerId) {
 		super();
+		this.amount = amount;
 		this.customerId = customerId;
-		this.accountBalance = accountBalance;
 	}
 
 	public CustomerAccount(long accountBalance) {
 		super();
 		this.accountBalance = accountBalance;
 	}
+	
+	
+	
+	
 	
 	public long getAccountNumber() {
 		return accountNumber;
@@ -60,31 +65,16 @@ public class CustomerAccount {
 	public void setAccountBalance(long accountBalance) {
 		this.accountBalance = accountBalance;
 	}
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + (int) (accountBalance ^ (accountBalance >>> 32));
-		result = prime * result + (int) (accountNumber ^ (accountNumber >>> 32));
-		result = prime * result + (int) (customerId ^ (customerId >>> 32));
-		return result;
+	
+	
+	
+
+	public long getAmount() {
+		return amount;
 	}
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		CustomerAccount other = (CustomerAccount) obj;
-		if (accountBalance != other.accountBalance)
-			return false;
-		if (accountNumber != other.accountNumber)
-			return false;
-		if (customerId != other.customerId)
-			return false;
-		return true;
+
+	public void setAmount(long amount) {
+		this.amount = amount;
 	}
 
 	public LocalDateTime getDate() {
@@ -101,6 +91,6 @@ public class CustomerAccount {
 				+ accountBalance + ", amount=" + amount + ", date=" + date + "]";
 	}
 
-	
+
 
 }

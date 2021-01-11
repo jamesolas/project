@@ -9,7 +9,7 @@ public class Customer {
 	private Date customerAge;
 	private String customerEmail;
 	private String customerPassword;
-
+	private Date customerDob;
 	
 	public Customer() {	
 	}
@@ -22,7 +22,26 @@ public class Customer {
 		this.customerPassword = customerPassword;
 	}
 
+	public Customer(String customerFirstName, String customerLastName, String customerEmail, String customerPassword,
+			Date customerDob) {
+		super();
+		this.customerFirstName = customerFirstName;
+		this.customerLastName = customerLastName;
+		this.customerEmail = customerEmail;
+		this.customerPassword = customerPassword;
+		this.customerDob = customerDob;
+	}
 
+
+	public Customer(String customerFirstName, String customerLastName, Date customerAge, String customerEmail,
+			String customerPassword) {
+		super();
+		this.customerFirstName = customerFirstName;
+		this.customerLastName = customerLastName;
+		this.customerAge = customerAge;
+		this.customerEmail = customerEmail;
+		this.customerPassword = customerPassword;
+	}
 
 	public Customer(long customerId, String customerFirstName, String customerLastName, Date customerAge,
 			String customerEmail, String customerPassword) {
@@ -133,6 +152,14 @@ public class Customer {
 		return "Customer [customerId=" + customerId + ", customerFirstName=" + customerFirstName + ", customerLastName="
 				+ customerLastName + ", customerAge=" + customerAge + ", customerEmail=" + customerEmail
 				+ ", customerPassword=" + customerPassword + "]";
+	}
+
+	public Date getCustomerDob() {
+		return customerDob;
+	}
+
+	public void setCustomerDob(Date customerDob) {
+		this.customerDob = customerDob;
 	}
 
 	

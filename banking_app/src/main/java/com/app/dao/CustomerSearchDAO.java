@@ -10,5 +10,6 @@ public interface CustomerSearchDAO {
 	public CustomerAccount viewBalance(long customerId) throws BusinessException;
 	public long findCustomerId(String customerEmail) throws BusinessException;
 	public long findAccountNumber(long customerId) throws BusinessException;
-
+	public long findBalance(long customerId) throws BusinessException;
+	public long getSendingAccount (long transactionId) throws BusinessException;
 }

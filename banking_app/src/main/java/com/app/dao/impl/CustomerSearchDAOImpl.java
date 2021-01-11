@@ -114,6 +114,48 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO {
 		return accountNumber;
 	}
 
+	@Override
+	public long findBalance(long customerId) throws BusinessException {
+		long balance;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "select accountbalance from project.account where customerid = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, customerId);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			if(resultSet.next()) {
+				balance = resultSet.getLong("accountbalance");	
+			}else {
+				throw new BusinessException("No account balance.");
+			}	
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);
+			throw new BusinessException("Internal error occurred.");
+		}
+		
+		return balance;
+	}
+
+	@Override
+	public long getSendingAccount(long transactionId) throws BusinessException {
+		long balance;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "select sendingaccount from project.transactions where transactionid = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, transactionId);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			if(resultSet.next()) {
+				balance = resultSet.getLong("accountbalance");	
+			}else {
+				throw new BusinessException("No account balance.");
+			}	
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);
+			throw new BusinessException("Internal error occurred.");
+		}
+		
+		return balance;
+	}
+
 
 	
 	

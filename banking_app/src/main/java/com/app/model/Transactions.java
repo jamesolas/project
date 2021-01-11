@@ -1,8 +1,10 @@
 package com.app.model;
 
+import java.util.Date;
+
 public class Transactions {
 	private long transactionId;
-	private long date;
+	private Date date;
 	private long amount;
 	private long sendingAccountNumber;
 	private long receivingAccountNumber;
@@ -14,14 +16,21 @@ public class Transactions {
 	}
 
 
-	public Transactions(long transactionId, long date, long amount, long sendingAccountNumber,
-			long receivingAccountNumber, long account) {
+	public Transactions(long transactionId, Date date, long amount, long sendingAccountNumber,
+			long receivingAccountNumber, long accountNumber) {
 		super();
 		this.transactionId = transactionId;
 		this.date = date;
 		this.amount = amount;
 		this.sendingAccountNumber = sendingAccountNumber;
 		this.receivingAccountNumber = receivingAccountNumber;
+		this.accountNumber = accountNumber;
+	}
+
+
+	public Transactions(long amount, long accountNumber) {
+		super();
+		this.amount = amount;
 		this.accountNumber = accountNumber;
 	}
 
@@ -36,12 +45,12 @@ public class Transactions {
 	}
 
 
-	public long getDate() {
+	public Date getDate() {
 		return date;
 	}
 
 
-	public void setDate(long date) {
+	public void setDate(Date date) {
 		this.date = date;
 	}
 
@@ -76,52 +85,13 @@ public class Transactions {
 	}
 
 
-	public long getAccounNumbert() {
+	public long getAccountNumber() {
 		return accountNumber;
 	}
 
 
-	public void setAccount(long accountNumber) {
+	public void setAccountNumber(long accountNumber) {
 		this.accountNumber = accountNumber;
-	}
-
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + (int) (accountNumber ^ (accountNumber >>> 32));
-		result = prime * result + (int) (amount ^ (amount >>> 32));
-		result = prime * result + (int) (date ^ (date >>> 32));
-		result = prime * result + (int) (receivingAccountNumber ^ (receivingAccountNumber >>> 32));
-		result = prime * result + (int) (sendingAccountNumber ^ (sendingAccountNumber >>> 32));
-		result = prime * result + (int) (transactionId ^ (transactionId >>> 32));
-		return result;
-	}
-
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Transactions other = (Transactions) obj;
-		if (accountNumber != other.accountNumber)
-			return false;
-		if (amount != other.amount)
-			return false;
-		if (date != other.date)
-			return false;
-		if (receivingAccountNumber != other.receivingAccountNumber)
-			return false;
-		if (sendingAccountNumber != other.sendingAccountNumber)
-			return false;
-		if (transactionId != other.transactionId)
-			return false;
-		return true;
 	}
 
 
@@ -129,8 +99,11 @@ public class Transactions {
 	public String toString() {
 		return "Transactions [transactionId=" + transactionId + ", date=" + date + ", amount=" + amount
 				+ ", sendingAccountNumber=" + sendingAccountNumber + ", receivingAccountNumber="
-				+ receivingAccountNumber + ", account=" + accountNumber + "]";
+				+ receivingAccountNumber + ", accountNumber=" + accountNumber + "]";
 	}
+
+
+
 
 	
 }
