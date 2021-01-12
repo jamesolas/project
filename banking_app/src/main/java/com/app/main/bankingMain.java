@@ -392,7 +392,58 @@ public class bankingMain {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-			
+				
+				do {
+					log.info("Employee Menu");
+					log.info("1)View customers' balances");
+					log.info("2)View all transactions");
+					log.info("3)Delete a customer account");
+					log.info("4)Exit");
+					
+					int ce = 0;
+					try {
+						ce=Integer.parseInt(sc.nextLine());
+					}catch(NumberFormatException e) {
+					}
+					switch(ce) {
+					case 1:log.info("View customers' balances");
+						try {
+							List<Customer>customerBalances = customerSearchService.viewCustomerBalances();
+							if(customerBalances != null && customerBalances.size() > 0) {
+								System.out.println("Showing all customer balances");
+								for(Customer c:customerBalances) {
+									System.out.println(c);
+								}
+							}
+							}catch (BusinessException e){
+								System.out.println(e.getMessage());
+							}
+						
+					
+					break;
+					case 2:log.info("View all transactions");
+					try {
+						List<Transactions>transactionsList = customerSearchService.viewAllTransactions();
+						if(transactionsList != null && transactionsList.size() > 0) {
+							System.out.println("Showing all transactions");
+							for(Transactions t:transactionsList) {
+								System.out.println(t);
+							}
+						}
+						}catch (BusinessException e){
+							System.out.println(e.getMessage());
+						}
+					break;
+					case 3:log.info("Delete a customer account");
+						
+					break;
+					case 4: log.info("Exit");
+					
+					break;
+					default: log.info("Invalid menu option");
+					}
+				}while(ch != 4);
+		
 			break;
 			case 4:log.info("Exit");
 			

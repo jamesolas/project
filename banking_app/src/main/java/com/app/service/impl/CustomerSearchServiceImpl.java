@@ -11,6 +11,7 @@ import com.app.model.Customer;
 import com.app.model.CustomerAccount;
 import com.app.model.Employee;
 import com.app.model.TransactionRequests;
+import com.app.model.Transactions;
 import com.app.service.CustomerSearchService;
 
 
@@ -102,6 +103,22 @@ public class CustomerSearchServiceImpl implements CustomerSearchService {
 			throw new BusinessException ("Entered email and password are invalid.");
 		}
 		return employee;
+	}
+
+	@Override
+	public List<Customer> viewCustomerBalances() throws BusinessException {
+		List<Customer> customerBalances = null;
+			//code here for DAO
+			customerBalances = customerSearchDAO.viewCustomerBalances();
+		return customerBalances;
+	}
+
+	@Override
+	public List<Transactions> viewAllTransactions() throws BusinessException {
+		List<Transactions> viewTransactions = null;
+		//code here for DAO
+		viewTransactions = customerSearchDAO.viewAllTransactions();
+	return viewTransactions;
 	}
 
 	

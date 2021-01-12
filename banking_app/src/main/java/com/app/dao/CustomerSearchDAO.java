@@ -7,6 +7,7 @@ import com.app.model.Customer;
 import com.app.model.CustomerAccount;
 import com.app.model.Employee;
 import com.app.model.TransactionRequests;
+import com.app.model.Transactions;
 
 public interface CustomerSearchDAO {
 	
@@ -18,4 +19,8 @@ public interface CustomerSearchDAO {
 	public long getSendingAccount (long transactionId) throws BusinessException;
 	public List<TransactionRequests> findReceiving (int accountNumber) throws BusinessException;
 	public Employee employeeLogin(String employeeEmail, String employeePassword) throws BusinessException;
+	
+	public List<Customer>viewCustomerBalances() throws BusinessException;
+	public List<Transactions>viewAllTransactions() throws BusinessException;
+	
 }

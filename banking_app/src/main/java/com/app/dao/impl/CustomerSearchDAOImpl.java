@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Stream;
 
 import org.apache.log4j.Logger;
 
@@ -17,6 +18,7 @@ import com.app.model.Customer;
 import com.app.model.CustomerAccount;
 import com.app.model.Employee;
 import com.app.model.TransactionRequests;
+import com.app.model.Transactions;
 import com.app.service.impl.CustomerSearchServiceImpl;
 
 public class CustomerSearchDAOImpl implements CustomerSearchDAO {
@@ -193,7 +195,7 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO {
 		Employee employee = null;
 
 		try(Connection connection = PostresqlConnection.getConnection()){
-			String sql = "select employeeid, email, password from project.customer "
+			String sql = "select employeeid, firstname, lastname, email, password from project.employee "
 					+ "where email=? and password=?";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setString(1, email);
@@ -201,7 +203,9 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO {
 			ResultSet resultSet = preparedStatement.executeQuery();
 			if(resultSet.next()) {
 				employee = new Employee();
-				employee.setEmployeeId(resultSet.getInt("employeeId"));
+				employee.setEmployeeId(resultSet.getInt("employeeid"));
+				employee.setFirstName(resultSet.getString("firstname"));
+				employee.setLastName(resultSet.getString("lastname"));
 				employee.setEmail(resultSet.getString("email"));
 				employee.setPassword(resultSet.getString("password"));	
 				
@@ -213,6 +217,74 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO {
 			throw new BusinessException("Internal error occurred.");
 		}
 		return employee;
+	}
+
+	@Override
+	public List<Customer> viewCustomerBalances() throws BusinessException {
+		List<Customer> customerList = new ArrayList<>();
+		List<CustomerAccount> customerAccountList = new ArrayList<>();
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "select customerfirstname, customerlastname, customeremail, customer.customerid, accountbalance, accountnumber from project.customer "
+					+ "join project.account on customer.customerid = account.customerid";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			while(resultSet.next()) {
+				Customer customer = new Customer();
+				CustomerAccount customerAccount = new CustomerAccount();
+				
+				customer.setCustomerFirstName(resultSet.getString("customerfirstname"));
+				customer.setCustomerLastName(resultSet.getString("customerlastname"));
+				customer.setCustomerEmail(resultSet.getString("customeremail"));
+				customer.setCustomerId(resultSet.getLong("customerid"));
+				customerAccount.setAccountBalance(resultSet.getLong("accountbalance"));	
+				customerAccount.setAccountNumber(resultSet.getLong("accountnumber"));	
+				customerList.add(customer);
+				customerAccountList.add(customerAccount);
+		}
+			if(customerList.size() == 0 && customerAccountList.size() == 0) {
+			throw new BusinessException("No results");
+		}
+		}catch(ClassNotFoundException | SQLException e){
+			log.info(e);
+			throw new BusinessException("Internal error occurred.");
+		}
+//		List<Integer> newList = new ArrayList<>();
+//		Stream.of(customerList, customerAccountList).forEach(newList::addAll);
+//		
+//		List<Integer> joinedList = joinLists(customerList, customerAccountList);
+//		public static <T> List=new<T> joinLists(List<T>customerList,customerAccountList) {
+//		        return Arrays.stream(lists).flatMap(Collection::stream).collect(Collectors.toList()); 
+//		}
+                 
+		//return concat(customerList, customerAccountList);
+	}
+
+	@Override
+	public List<Transactions> viewAllTransactions() throws BusinessException {
+		List<Transactions> transactionsList = new ArrayList<>();
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql="select transactionid, date, amount, sendingaccountnumber, receivingaccountnumber, accountnumber from project.transactions";
+			PreparedStatement preparedStatement  = connection.prepareStatement(sql);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			while(resultSet.next()){
+				Transactions transactions = new Transactions();
+				transactions.setTransactionId(resultSet.getLong("transactionid"));
+				transactions.setDate(resultSet.getDate("date"));
+				transactions.setAmount(resultSet.getInt("amount"));
+				transactions.setSendingAccountNumber(resultSet.getLong("sendingaccountnumber"));
+				transactions.setReceivingAccountNumber(resultSet.getLong("receivingaccountnumber"));
+				transactions.setAccountNumber(resultSet.getLong("accountnumber"));
+				
+				transactionsList.add(transactions);
+			}
+			if(transactionsList.size() == 0){
+				throw new BusinessException("No transactions found.");
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println(e);
+			throw new BusinessException("Internal error occured. Contact SYSADMIN.");
+		}
+		return transactionsList;
 	}
 
 	
