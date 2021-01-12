@@ -229,17 +229,15 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			ResultSet resultSet = preparedStatement.executeQuery();
 			while(resultSet.next()) {
-				Customer customer = new Customer();
-				CustomerAccount customerAccount = new CustomerAccount();
-				
+				Customer customer = new Customer();			
 				customer.setCustomerFirstName(resultSet.getString("customerfirstname"));
 				customer.setCustomerLastName(resultSet.getString("customerlastname"));
 				customer.setCustomerEmail(resultSet.getString("customeremail"));
 				customer.setCustomerId(resultSet.getLong("customerid"));
-				customerAccount.setAccountBalance(resultSet.getLong("accountbalance"));	
-				customerAccount.setAccountNumber(resultSet.getLong("accountnumber"));	
+				customer.setAccountBalance(resultSet.getLong("accountbalance"));	
+				customer.setAccountNumber(resultSet.getLong("accountnumber"));	
 				customerList.add(customer);
-				customerAccountList.add(customerAccount);
+				//customerAccountList.add(customerAccount);
 		}
 			if(customerList.size() == 0 && customerAccountList.size() == 0) {
 			throw new BusinessException("No results");
@@ -248,15 +246,9 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO {
 			log.info(e);
 			throw new BusinessException("Internal error occurred.");
 		}
-//		List<Integer> newList = new ArrayList<>();
-//		Stream.of(customerList, customerAccountList).forEach(newList::addAll);
-//		
-//		List<Integer> joinedList = joinLists(customerList, customerAccountList);
-//		public static <T> List=new<T> joinLists(List<T>customerList,customerAccountList) {
-//		        return Arrays.stream(lists).flatMap(Collection::stream).collect(Collectors.toList()); 
-//		}
+
                  
-		//return concat(customerList, customerAccountList);
+		return customerList;
 	}
 
 	@Override
@@ -286,7 +278,6 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO {
 		}
 		return transactionsList;
 	}
-
 	
 	
 	

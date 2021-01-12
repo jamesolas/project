@@ -61,12 +61,13 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 	}
 
 	@Override
-	public int deleteCustomer(Customer customer) throws BusinessException{
+	public void deleteCustomer(long customerId) throws BusinessException{
 		int c = 0;
 		try(Connection connection = PostresqlConnection.getConnection()){
-			String sql = "delete from project.customer(customerid) values(?)";
+			String sql = "delete from project.customer where customerid = ?";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
-			preparedStatement.setLong(1, customer.getCustomerId());
+			Customer customer = new Customer();
+			preparedStatement.setLong(1, customerId);
 			
 			c = preparedStatement.executeUpdate();
 			
@@ -74,7 +75,6 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 			log.info(e);;
 			throw new BusinessException("Inernal error occured. Please contact admin.");
 		}
-		return c;
 	}
 	
 	

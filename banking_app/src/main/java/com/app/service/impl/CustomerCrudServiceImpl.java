@@ -16,7 +16,6 @@ public class CustomerCrudServiceImpl implements CustomerCrudService {
 	private static Logger log = Logger.getLogger(CustomerCrudServiceImpl.class); 
 	
 	CustomerCrudDAOImpl dao = new CustomerCrudDAOImpl(); 
-	//CustomerCrudDAO customerCrudDAO = new CustomerCrudDAOImpl();
 
 	@Override
 	public Customer createCustomer(String customerFirstName, String customerLastName, String customerEmail,
@@ -116,14 +115,7 @@ public class CustomerCrudServiceImpl implements CustomerCrudService {
 	public Customer deleteCustomer(long customerId) throws BusinessException {
 		Customer customer = null;
 		//code to DAO
-		Customer c = new Customer(customerId);
-		try {
-			if(dao.deleteCustomer(c) != 0) {
-				log.info("Delete was successful.");
-			}
-		} catch (BusinessException e) {
-			log.info(e.getMessage());
-		}		
+		dao.deleteCustomer(customerId);
 		return customer;
 	}
 

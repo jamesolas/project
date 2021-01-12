@@ -10,7 +10,7 @@ public interface CustomerCrudDAO {
 	
 	public int createCustomer(Customer customer) throws BusinessException;
 	public int createBalance(CustomerAccount customerAccount) throws BusinessException;
-	public int deleteCustomer(Customer customer)throws BusinessException;
+	public void deleteCustomer(long customerId)throws BusinessException;
 	
 	public int deposit(CustomerAccount customerAccount) throws BusinessException;
 	public int withdraw(CustomerAccount customerAccount) throws BusinessException;

@@ -435,6 +435,15 @@ public class bankingMain {
 						}
 					break;
 					case 3:log.info("Delete a customer account");
+						log.info("Enter a customer Id to delete.");
+						customerId = Long.parseLong(sc.nextLine());
+						try {
+							customer = customerCrudService.deleteCustomer(customerId);
+							log.info("Customer "+customerId+" deleted successfully.");
+						} catch (BusinessException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
 						
 					break;
 					case 4: log.info("Exit");

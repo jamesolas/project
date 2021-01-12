@@ -10,8 +10,24 @@ public class Customer {
 	private String customerEmail;
 	private String customerPassword;
 	private Date customerDob;
+	private long AccountBalance;
+	private long AccountNumber;
 	
 	public Customer() {	
+	}
+
+	public Customer(long customerId, String customerFirstName, String customerLastName, Date customerAge,
+			String customerEmail, String customerPassword, Date customerDob, long accountBalance, long accountNumber) {
+		super();
+		this.customerId = customerId;
+		this.customerFirstName = customerFirstName;
+		this.customerLastName = customerLastName;
+		this.customerAge = customerAge;
+		this.customerEmail = customerEmail;
+		this.customerPassword = customerPassword;
+		this.customerDob = customerDob;
+		setAccountBalance(accountBalance);
+		setAccountNumber(accountNumber);
 	}
 
 	public Customer(String customerFirstName, String customerLastName, String customerEmail, String customerPassword) {
@@ -147,12 +163,6 @@ public class Customer {
 		return false;
 	}
 
-	@Override
-	public String toString() {
-		return "Customer [customerId=" + customerId + ", customerFirstName=" + customerFirstName + ", customerLastName="
-				+ customerLastName + ", customerAge=" + customerAge + ", customerEmail=" + customerEmail
-				+ ", customerPassword=" + customerPassword + "]";
-	}
 
 	public Date getCustomerDob() {
 		return customerDob;
@@ -160,6 +170,30 @@ public class Customer {
 
 	public void setCustomerDob(Date customerDob) {
 		this.customerDob = customerDob;
+	}
+
+	public long getAccountBalance() {
+		return AccountBalance;
+	}
+
+	public void setAccountBalance(long accountBalance) {
+		AccountBalance = accountBalance;
+	}
+
+	public long getAccountNumber() {
+		return AccountNumber;
+	}
+
+	public void setAccountNumber(long accountNumber) {
+		AccountNumber = accountNumber;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [customerId=" + customerId + ", customerFirstName=" + customerFirstName + ", customerLastName="
+				+ customerLastName + ", customerAge=" + customerAge + ", customerEmail=" + customerEmail
+				+ ", customerPassword=" + customerPassword + ", customerDob=" + customerDob + ", AccountBalance="
+				+ AccountBalance + ", AccountNumber=" + AccountNumber + "]";
 	}
 
 	
