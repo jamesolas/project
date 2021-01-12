@@ -98,18 +98,18 @@ public class CustomerCrudServiceImpl implements CustomerCrudService {
 	}
 
 	@Override
-	public CustomerAccount receiveMoney(long accountNumber, long amount) throws BusinessException {
-		CustomerAccount customerAccount = null;
+	public TransactionRequests receiveMoney(long receivingAccount) throws BusinessException {
+		TransactionRequests  transactionRequests  = null;
 		//code to DAO
-		CustomerAccount c = new CustomerAccount(accountNumber, amount);
+	
 		try {
-			if(dao.receiveMoney(c) != 0) {
-				log.info("Withdrawal was successful.");
+			if(dao.receiveMoney((int)receivingAccount) != 0) {
+				log.info("Money transfer was successful.");
 			}
 		} catch (BusinessException e) {
 			log.info(e.getMessage());
 		}		
-		return customerAccount;
+		return transactionRequests;
 	}
 
 	@Override

@@ -2,6 +2,7 @@ package com.app.dao.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Date;
 
@@ -137,13 +138,31 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 	}
 
 	@Override
-	public int receiveMoney(CustomerAccount customerAccount) throws BusinessException {
+	public int receiveMoney(int receivingAccount) throws BusinessException {
 		int c = 0;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "select amount, date, sendingaccountnumber, receivingaccountnumber, requestid from project.transactionrequests where receivingaccountnumber = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, receivingAccount);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			if(resultSet.next()){
+				TransactionRequests transactionRequests = new TransactionRequests();
+				transactionRequests.setAmount(resultSet.getInt("amount"));
+				transactionRequests.setDate(resultSet.getDate("date"));
+				transactionRequests.setSendingAccount(resultSet.getLong("sendingaccountnumber"));
+				transactionRequests.setReceivingAccount(resultSet.getLong("receivingaccountnumber"));
+				transactionRequests.setRequestId(resultSet.getLong("requestid"));
+				
+			}else {
+				throw new BusinessException("No incoming money transfer found with account number " + receivingAccount);
+			}
+			c = preparedStatement.executeUpdate();
 		
 		
-		
-		
-		
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);;
+			throw new BusinessException("Inernal error occured. Please contact admin.");
+		}
 		return c;
 	}
 
@@ -153,19 +172,18 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 		try(Connection connection = PostresqlConnection.getConnection()){
 		String sql = "insert into project.transactions (date, amount, accountnumber) values(?,?,?)";
 		PreparedStatement preparedStatement = connection.prepareStatement(sql);
-		//preparedStatement.setDate(1, java.sql.Date.valueOf(java.time.LocalDate.now()));
-		Date date = null;
-		preparedStatement.setDate(1, new java.sql.Date (Transactions.getDate().getTime()));
+		preparedStatement.setDate(1, java.sql.Date.valueOf(java.time.LocalDate.now()));
 		preparedStatement.setLong(2, transactions.getAmount());
 		preparedStatement.setLong(3, transactions.getAccountNumber());
 		
-		log.info("date: "+java.sql.Date.valueOf(java.time.LocalDate.now()));
+		c = preparedStatement.executeUpdate();
+		
 		log.info("getAmount: "+transactions.getAmount());
 		log.info("getAccountNumber: "+transactions.getAccountNumber());
 		
 		}catch(ClassNotFoundException | SQLException e) {
 			log.info(e);;
-			throw new BusinessException("Inernal error occured. Please contact admin.");
+			throw new BusinessException("Internal error occured. Please contact admin.");
 		}
 		return c;
 	}

@@ -1,8 +1,12 @@
 package com.app.dao;
 
+import java.util.List;
+
 import com.app.exception.BusinessException;
 import com.app.model.Customer;
 import com.app.model.CustomerAccount;
+import com.app.model.Employee;
+import com.app.model.TransactionRequests;
 
 public interface CustomerSearchDAO {
 	
@@ -12,4 +16,6 @@ public interface CustomerSearchDAO {
 	public long findAccountNumber(long customerId) throws BusinessException;
 	public long findBalance(long customerId) throws BusinessException;
 	public long getSendingAccount (long transactionId) throws BusinessException;
+	public List<TransactionRequests> findReceiving (int accountNumber) throws BusinessException;
+	public Employee employeeLogin(String employeeEmail, String employeePassword) throws BusinessException;
 }

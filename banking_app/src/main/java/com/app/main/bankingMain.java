@@ -6,6 +6,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
 import org.apache.log4j.Logger;
@@ -15,6 +16,7 @@ import com.app.dao.impl.CustomerSearchDAOImpl;
 import com.app.exception.BusinessException;
 import com.app.model.Customer;
 import com.app.model.CustomerAccount;
+import com.app.model.Employee;
 import com.app.model.TransactionRequests;
 import com.app.model.Transactions;
 import com.app.service.CustomerCrudService;
@@ -128,12 +130,12 @@ public class bankingMain {
 					log.info("Enter your password");
 					String customerPassword2 = sc.nextLine();
 				
-						int x = 0;
 						//code to service for logging in
 				Customer customer;
 				try {
 					customer = customerSearchService.customerLogin(customerEmail2, customerPassword2);
 					log.info(customer);
+					//List<Customerlist> = new Array();
 				} catch (BusinessException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
@@ -236,7 +238,7 @@ public class bankingMain {
 							log.info("Please enter an amount greater than zero.");
 						}else {
 						CustomerAccount customerAccount3 = customerCrudService.withdraw(amount, longFindId);
-						
+						Transactions transactions = customerCrudService.updateTransactions(amount, findAccount);
 							//code to update balance
 							longId2 = Long.parseLong(findId);
 							getBalance = customerSearchService.findBalance(longId2);
@@ -261,7 +263,7 @@ public class bankingMain {
 							log.info("You don't have that much money to withdraw.");
 							}else {
 								if (amount <= 0) {
-							log.info("Please enter an amount greater than zero.");
+									log.info("Please enter an amount greater than zero.");
 									}else {
 										log.info("Please enter an account number to send money to.");
 										long receivingAccountNumber = Long.parseLong(sc.nextLine());
@@ -288,20 +290,108 @@ public class bankingMain {
 					}
 					
 					break;
-					case 5: log.info("Receive money");
-					
-					break;
-					case 6: log.info("Exit");
+					case 5: 
+						int cr = 0;
+						
+							do {
+								
+							log.info("Receive money");
+							log.info("1)View incoming money transfers.");
+							log.info("2)Accept an incoming money transfer.");
+							log.info("3)Reject an incoming money transfer.");
+							log.info("4)Exit");
+							
+							try {
+								cr=Integer.parseInt(sc.nextLine());
+								}catch(NumberFormatException e) {
+								}
+							
+					switch(cr) {
+						case 1:log.info("View incoming money transfers.");
+						//code to update balance
+						longId2 = Long.parseLong(findId);
+						
+						//code to get account number
+						try {
+							findAccount = customerSearchService.findAccountNumber(longId);
+						} catch (BusinessException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+								log.info("Account Number: "+findAccount);
+						//code to service layer
+						try {
+							getBalance = customerSearchService.findBalance(longId2);
+						} catch (BusinessException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+						try {
+							List<TransactionRequests> transactionRequestsList = customerSearchService.findReceiving(findAccount);
+							//code to print results
+							if(transactionRequestsList != null && transactionRequestsList.size() > 0) {
+								System.out.println("Incoming money transfers for account " + findAccount);
+								for(TransactionRequests t:transactionRequestsList) {
+									System.out.println(t);
+								}
+							}
+						} catch (BusinessException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+						
+						
+							
+						break;
+						case 2:log.info("Accept an incoming money transfer.");
+							   log.info("Enter a transaction request Id to accept");
+							   int requestId = Integer.parseInt(sc.nextLine());
+							 //code to get account number
+								try {
+									findAccount = customerSearchService.findAccountNumber(longId);
+								} catch (BusinessException e1) {
+									// TODO Auto-generated catch block
+									e1.printStackTrace();
+								}
+										log.info("Account Number: "+findAccount);
+							//code to service layer
+						try {
+							TransactionRequests transactionRequests = customerCrudService.receiveMoney(findAccount);
+						} catch (BusinessException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+							   
+						break;
+						case 3:log.info("Reject an incoming money transfer.");
+						
+						break;
+						case 4:log.info("Exit");
+						break;
+						default: log.info("Invalid menu option");
 					}
-					
-					
-					
-					
-					
-					}while(cm != 6);
+					}while(cr != 4);
+					break;
+					case 6: log.info("Exit");	
+					}}while(cm != 6);
 			
 			break;	
 			case 3:log.info("Employee Login");
+	
+				log.info("Enter your email.");
+				String employeeEmail = sc.nextLine();
+				log.info("Enter your password");
+				String employeePassword = sc.nextLine();
+		
+				//code to service for logging in
+				try {
+					Employee employee = customerSearchService.employeeLogin(employeeEmail, employeePassword);
+					log.info(employee);
+					//List<Customerlist> = new Array();
+				} catch (BusinessException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			
 			break;
 			case 4:log.info("Exit");

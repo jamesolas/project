@@ -12,6 +12,13 @@ public class TransactionRequests {
 	public TransactionRequests() {
 		// TODO Auto-generated constructor stub
 	}
+	
+
+	public TransactionRequests(long receivingAccount) {
+		super();
+		this.receivingAccount = receivingAccount;
+	}
+
 
 	public TransactionRequests(long amount, Date date, long sendingAccount, long receivingAccount, long requestId) {
 		super();

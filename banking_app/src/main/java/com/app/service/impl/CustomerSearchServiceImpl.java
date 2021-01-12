@@ -1,5 +1,7 @@
 package com.app.service.impl;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 
 import com.app.dao.CustomerSearchDAO;
@@ -7,6 +9,8 @@ import com.app.dao.impl.CustomerSearchDAOImpl;
 import com.app.exception.BusinessException;
 import com.app.model.Customer;
 import com.app.model.CustomerAccount;
+import com.app.model.Employee;
+import com.app.model.TransactionRequests;
 import com.app.service.CustomerSearchService;
 
 
@@ -74,37 +78,30 @@ public class CustomerSearchServiceImpl implements CustomerSearchService {
 		
 		return longId2;
 	}
-	
-
 
 	@Override
-	public CustomerAccount deposit(long customerId) throws BusinessException {
-		// TODO Auto-generated method stub
-		return null;
+	public List<TransactionRequests> findReceiving(long receivingAccount) throws BusinessException {
+		List<TransactionRequests> transactionRequests = null;
+		if(receivingAccount > 0) {
+			int receivingAccountInt= (int)receivingAccount;
+			//code here for DAO
+			transactionRequests = customerSearchDAO.findReceiving(receivingAccountInt);
+		}else {
+			throw new BusinessException("Entered account number " + receivingAccount + " is invalid.");
+		}
+		return transactionRequests;
 	}
 
 	@Override
-	public CustomerAccount withdraw(long customerId) throws BusinessException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public CustomerAccount sendMoney(long customerId) throws BusinessException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public CustomerAccount receiveMoney(long customerId) throws BusinessException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public CustomerAccount viewIncoming(long custumerId) throws BusinessException {
-		// TODO Auto-generated method stub
-		return null;
+	public Employee employeeLogin(String employeeEmail, String employeePassword) throws BusinessException {
+		Employee employee = null;
+		if(employeeEmail.length() > 0 && employeePassword.length() > 0) {
+			//code here for DAO
+			employee = customerSearchDAO.employeeLogin(employeeEmail, employeePassword);
+		}else {
+			throw new BusinessException ("Entered email and password are invalid.");
+		}
+		return employee;
 	}
 
 	

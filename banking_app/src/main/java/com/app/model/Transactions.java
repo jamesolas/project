@@ -35,6 +35,14 @@ public class Transactions {
 	}
 
 
+	public Transactions(Date date, long amount, long accountNumber) {
+		super();
+		this.date = date;
+		this.amount = amount;
+		this.accountNumber = accountNumber;
+	}
+
+
 	public long getTransactionId() {
 		return transactionId;
 	}
