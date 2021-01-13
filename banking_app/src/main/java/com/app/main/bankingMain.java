@@ -1,10 +1,13 @@
 package com.app.main;
 
+import java.lang.reflect.Array;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
@@ -135,7 +138,16 @@ public class bankingMain {
 				try {
 					customer = customerSearchService.customerLogin(customerEmail2, customerPassword2);
 					log.info(customer);
-					//List<Customerlist> = new Array();
+					
+//					}
+//					List<Customer>customerList = new ArrayList<>();
+//						for(Customer number:customerList) {
+//							Customer temp = new Customer();
+//							customerList.add(temp);
+//						}
+//					log.info(temp);
+					
+					
 				} catch (BusinessException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();

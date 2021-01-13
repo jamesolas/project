@@ -87,8 +87,6 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 			preparedStatement.setLong(1, customerAccount.getAmount());
 			preparedStatement.setLong(2, customerAccount.getCustomerId());
 			
-			
-			
 			c = preparedStatement.executeUpdate();
 			
 		}catch(ClassNotFoundException | SQLException e) {
@@ -137,9 +135,14 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 		return c;
 	}
 
+	
+	
 	@Override
 	public int receiveMoney(int receivingAccount) throws BusinessException {
 		int c = 0;
+		int d = 0;
+		int f = 0;
+	
 		try(Connection connection = PostresqlConnection.getConnection()){
 			String sql = "select amount, date, sendingaccountnumber, receivingaccountnumber, requestid from project.transactionrequests where receivingaccountnumber = ?";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -152,18 +155,56 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 				transactionRequests.setSendingAccount(resultSet.getLong("sendingaccountnumber"));
 				transactionRequests.setReceivingAccount(resultSet.getLong("receivingaccountnumber"));
 				transactionRequests.setRequestId(resultSet.getLong("requestid"));
+				c = preparedStatement.executeUpdate();
 				
-			}else {
+//				long amount = transactionRequests.getAmount();
+//				log.info("amount "+amount);
+//				Date date = transactionRequests.getDate();
+//				log.info("date "+date);
+//				long sendingAccount = transactionRequests.getSendingAccount();
+//				log.info("sending account "+sendingAccount);
+//				//receiving account already found from parameter
+//				log.info("receiving account "+receivingAccount);
+//				long requestId = transactionRequests.getRequestId();
+//				log.info("request Id "+requestId);
+				
+				//code to get customer id
+				if (c != 0) {
+					String sql2 = "select customertid from project.customer where accountnumber = ?";
+					PreparedStatement preparedStatement2 = connection.prepareStatement(sql2);
+					preparedStatement2.setLong(1, transactionRequests.getSendingAccount());
+					ResultSet resultSet2 = preparedStatement2.executeQuery();
+					if(resultSet2.next()){
+						Customer customer = new Customer();
+						customer.setCustomerId(resultSet2.getInt("customerid"));
+						
+						long customerId = customer.getCustomerId();
+						log.info("customer Id: "+customerId);					
+						
+						d = preparedStatement.executeUpdate();
+						
+						//code to insert data into transactions table
+						if (d != 0) {
+							String sql3 = "insert into project.transactions values(date, amount, sendingaccountnumber, receivingaccountnumber)"
+									+ "values(?,?,?,?)";
+							PreparedStatement preparedStatement3 = connection.prepareStatement(sql2);
+							preparedStatement3.setDate(1, new java.sql.Date(transactionRequests.getDate().getTime()));
+							preparedStatement3.setLong(2, transactionRequests.getAmount());
+							preparedStatement3.setLong(3, transactionRequests.getSendingAccount());
+							preparedStatement3.setLong(4, transactionRequests.getSendingAccount());
+							ResultSet resultSet3 = preparedStatement3.executeQuery();
+							f = preparedStatement.executeUpdate();
+						}											
+					}
+				}
+				}else {
 				throw new BusinessException("No incoming money transfer found with account number " + receivingAccount);
 			}
-			c = preparedStatement.executeUpdate();
-		
-		
 		}catch(ClassNotFoundException | SQLException e) {
 			log.info(e);;
 			throw new BusinessException("Inernal error occured. Please contact admin.");
 		}
-		return c;
+		return f;
 	}
 
 	@Override

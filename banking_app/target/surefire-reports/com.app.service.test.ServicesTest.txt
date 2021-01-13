@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.app.service.test.ServicesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.14 s <<< FAILURE! - in com.app.service.test.ServicesTest
+testDeposit  Time elapsed: 0.117 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: java.lang.String@400cff1a<CustomerAccount [accountNumber=0, customerId=1, accountBalance=0, amount=100, date=null]> but was: com.app.model.CustomerAccount@275710fc<CustomerAccount [accountNumber=0, customerId=1, accountBalance=0, amount=100, date=null]>
+	at com.app.service.test.ServicesTest.testDeposit(ServicesTest.java:27)
+

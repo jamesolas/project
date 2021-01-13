@@ -8,6 +8,7 @@ import com.app.model.TransactionRequests;
 import com.app.model.Transactions;
 import com.app.service.CustomerCrudService;
 
+
 import java.util.Date;
 
 import org.apache.log4j.Logger;
@@ -50,10 +51,10 @@ public class CustomerCrudServiceImpl implements CustomerCrudService {
 	public CustomerAccount deposit(long amount, long customerId) throws BusinessException {
 		CustomerAccount customerAccount = null;
 		//code to DAO
-		CustomerAccount c = new CustomerAccount(amount, customerId);
+		customerAccount = new CustomerAccount(amount, customerId);
 
 		try {
-			if(dao.deposit(c) != 0) {
+			if(dao.deposit(customerAccount) != 0) {
 				log.info("Deposit was successful.");
 			}else {
 				log.info("Deposit was not successful");

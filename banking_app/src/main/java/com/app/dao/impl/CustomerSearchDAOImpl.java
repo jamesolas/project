@@ -278,6 +278,18 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO {
 		}
 		return transactionsList;
 	}
+
+	@Override
+	public long getTransaction(long customerId) throws BusinessException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public long getSenderId(long sendingAccountNumber) throws BusinessException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 	
 	

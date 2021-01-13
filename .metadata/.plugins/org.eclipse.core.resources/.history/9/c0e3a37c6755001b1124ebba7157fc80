@@ -1,0 +1,17 @@
+package com.app.service.test;
+
+import org.junit.jupiter.api.BeforeAll;
+
+import com.app.service.CustomerCrudService;
+
+public class ServicesTest {
+	
+	private static CustomerCrudService services;
+	
+	@BeforeAll
+	public static void setupCustomerCrudService() {
+		services = new CustomerCrudService();
+	}
+	
+
+}

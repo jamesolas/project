@@ -22,6 +22,8 @@ public interface CustomerSearchDAO {
 	
 	public List<Customer>viewCustomerBalances() throws BusinessException;
 	public List<Transactions>viewAllTransactions() throws BusinessException;
-
+	
+	public long getTransaction (long customerId) throws BusinessException;
+	public long getSenderId (long sendingAccountNumber) throws BusinessException;
 	
 }
