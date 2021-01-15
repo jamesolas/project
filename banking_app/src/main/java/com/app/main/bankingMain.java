@@ -139,14 +139,6 @@ public class bankingMain {
 					customer = customerSearchService.customerLogin(customerEmail2, customerPassword2);
 					log.info(customer);
 					
-//					}
-//					List<Customer>customerList = new ArrayList<>();
-//						for(Customer number:customerList) {
-//							Customer temp = new Customer();
-//							customerList.add(temp);
-//						}
-//					log.info(temp);
-					
 					
 				} catch (BusinessException e1) {
 					// TODO Auto-generated catch block
@@ -368,7 +360,8 @@ public class bankingMain {
 										log.info("Account Number: "+findAccount);
 							//code to service layer
 						try {
-							TransactionRequests transactionRequests = customerCrudService.receiveMoney(findAccount);
+							
+							TransactionRequests transactionRequests = customerCrudService.receiveMoney(findAccount, requestId);
 						} catch (BusinessException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
@@ -376,6 +369,13 @@ public class bankingMain {
 							   
 						break;
 						case 3:log.info("Reject an incoming money transfer.");
+							int rejectTransferId = Integer.parseInt(sc.nextLine());
+						try {
+							TransactionRequests rejectTransfer = customerCrudService.deleteRequest(rejectTransferId);
+						} catch (BusinessException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
 						
 						break;
 						case 4:log.info("Exit");

@@ -231,8 +231,98 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 
 	@Override
 	public int updateAccounts(Transactions transactions) throws BusinessException {
-		// TODO Auto-generated method stub
-		return 0;
+		int c = 0;
+		try(Connection connection = PostresqlConnection.getConnection()){
+		String sql = "insert into project.transactions (date, amount, accountnumber) values(?,?,?)";
+		PreparedStatement preparedStatement = connection.prepareStatement(sql);
+		preparedStatement.setDate(1, java.sql.Date.valueOf(java.time.LocalDate.now()));
+		preparedStatement.setLong(2, transactions.getAmount());
+		preparedStatement.setLong(3, transactions.getAccountNumber());
+		
+		c = preparedStatement.executeUpdate();
+		
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);;
+			throw new BusinessException("Internal error occured. Please contact admin.");
+		}
+		return c;
+	}
+
+	@Override
+	public int insertTransaction(Transactions transactions) throws BusinessException {
+		int c = 0;
+		try(Connection connection = PostresqlConnection.getConnection()){
+		String sql = "insert into project.transactions (date, amount, sendingaccountnumber, receivingaccountnumber) values(?,?,?,?)";
+		PreparedStatement preparedStatement = connection.prepareStatement(sql);
+		preparedStatement.setDate(1, java.sql.Date.valueOf(java.time.LocalDate.now()));
+		preparedStatement.setLong(2, transactions.getAmount());
+		preparedStatement.setLong(3, transactions.getSendingAccountNumber());
+		preparedStatement.setLong(4, transactions.getReceivingAccountNumber());
+		
+		log.info("insert transaction log");
+		c = preparedStatement.executeUpdate();
+		
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);;
+			throw new BusinessException("Internal error occured. Please contact admin.");
+		}
+		return c;
+	}
+
+	@Override
+	public int updateReceiver(CustomerAccount customerAccount) throws BusinessException {
+		int c = 0;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "update project.account set accountbalance = accountbalance + ? where accountnumber = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, customerAccount.getAmount());
+			preparedStatement.setLong(2, customerAccount.getAccountNumber());
+			
+			log.info("updateReceiver -> getAccountNumber() = " + customerAccount.getAccountNumber());
+			c = preparedStatement.executeUpdate();
+			
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);;
+			throw new BusinessException("Internal error occured. Please contact admin.");
+		}
+		return c;
+	}
+
+	@Override
+	public int updateSender(CustomerAccount customerAccount) throws BusinessException {
+		int c = 0;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "update project.account set accountbalance = accountbalance - ? where accountnumber = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, customerAccount.getAmount());
+			preparedStatement.setLong(2, customerAccount.getAccountNumber());
+
+			log.info("updateSender -> getAccountNumber() = " + customerAccount.getAccountNumber());
+			c = preparedStatement.executeUpdate();
+			
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);;
+			throw new BusinessException("Internal error occured. Please contact admin.");
+		}
+		return c;
+	}
+
+	@Override
+	public long deleteTransactionRequest(long requestId) throws BusinessException {
+		long c = 0;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "delete from project.transactionrequests where requestid = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			//Customer customer = new Customer();
+			preparedStatement.setLong(1, requestId);
+			
+			c = preparedStatement.executeUpdate();
+			
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);;
+			throw new BusinessException("Inernal error occured. Please contact admin.");
+		}
+		return c;
 	}
 
 	

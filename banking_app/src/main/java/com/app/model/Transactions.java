@@ -28,6 +28,14 @@ public class Transactions {
 	}
 
 
+	public Transactions(long amount, long sendingAccountNumber, long receivingAccountNumber) {
+		super();
+		this.amount = amount;
+		this.sendingAccountNumber = sendingAccountNumber;
+		this.receivingAccountNumber = receivingAccountNumber;
+	}
+
+
 	public Transactions(long amount, long accountNumber) {
 		super();
 		this.amount = amount;

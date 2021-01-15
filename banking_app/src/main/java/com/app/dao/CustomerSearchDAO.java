@@ -1,5 +1,6 @@
 package com.app.dao;
 
+import java.util.Date;
 import java.util.List;
 
 import com.app.exception.BusinessException;
@@ -23,7 +24,10 @@ public interface CustomerSearchDAO {
 	public List<Customer>viewCustomerBalances() throws BusinessException;
 	public List<Transactions>viewAllTransactions() throws BusinessException;
 	
-	public long getTransaction (long customerId) throws BusinessException;
+	public long getSenderAccount (long requestId) throws BusinessException;
 	public long getSenderId (long sendingAccountNumber) throws BusinessException;
+	public long getAmount (long receivingAccountNumber) throws BusinessException;
+	public Date getDate (long receivingAccountNumber) throws BusinessException;
+	public long getReceiverId (long receivingAccountNumber) throws BusinessException;
 	
 }

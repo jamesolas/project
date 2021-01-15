@@ -4,7 +4,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Stream;
@@ -279,16 +282,120 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO {
 		return transactionsList;
 	}
 
-	@Override
-	public long getTransaction(long customerId) throws BusinessException {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
 	@Override
 	public long getSenderId(long sendingAccountNumber) throws BusinessException {
-		// TODO Auto-generated method stub
-		return 0;
+		long customerId;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "select customerid from project.account where accountnumber = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, sendingAccountNumber);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			if(resultSet.next()) {
+				customerId = resultSet.getLong("customerid");
+			
+				log.info(sendingAccountNumber);	
+				
+			}else {
+				throw new BusinessException("No transactions found for getSenderId.");
+			}	
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);
+			throw new BusinessException("Internal error occurred.");
+		}
+		
+		return customerId;
+	}
+
+	@Override
+	public long getAmount(long requestId) throws BusinessException {
+		long amount;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "select amount from project.transactionrequests where requestid = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, requestId);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			if(resultSet.next()) {
+				amount = resultSet.getLong("amount");
+				
+			}else {
+				throw new BusinessException("No transactions found for getAmount.");
+			}	
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);
+			throw new BusinessException("Internal error occurred.");
+		}
+		
+		return amount;
+	}
+
+	@Override
+	public Date getDate(long receivingAccountNumber) throws BusinessException {
+		Date date;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "select date from project.transactionrequests where receivingaccountnumber = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, receivingAccountNumber);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			if(resultSet.next()) {
+					
+				date = resultSet.getDate("date");
+							
+			}else {
+				throw new BusinessException("No transactions found for getDate.");
+			}	
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);
+			throw new BusinessException("Internal error occurred.");
+		}
+		
+		return date;
+	}
+
+	@Override
+	public long getReceiverId(long receivingAccountNumber) throws BusinessException {
+		long receiverId;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "select customerid from project.account where accountnumber = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, receivingAccountNumber);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			if(resultSet.next()) {
+				receiverId = resultSet.getLong("customerid");
+				
+				
+			}else {
+				throw new BusinessException("No transactions found for getReceiverId.");
+			}	
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);
+			throw new BusinessException("Internal error occurred.");
+		}
+		
+		return receiverId;
+	}
+
+	@Override
+	public long getSenderAccount(long requestId) throws BusinessException {
+		long senderAccount;
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "select sendingaccountnumber from project.transactionrequests where requestid = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, requestId);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			if(resultSet.next()) {
+				senderAccount = resultSet.getLong("sendingaccountnumber");
+				
+				
+			}else {
+				throw new BusinessException("No transactions found for getSenderAccount.");
+			}	
+		}catch(ClassNotFoundException | SQLException e) {
+			log.info(e);
+			throw new BusinessException("Internal error occurred.");
+		}
+		
+		return senderAccount;
 	}
 	
 	

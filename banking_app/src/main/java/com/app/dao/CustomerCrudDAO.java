@@ -21,4 +21,9 @@ public interface CustomerCrudDAO {
 	public int updateTransactions(Transactions transactions) throws BusinessException;
 	public int updateAccounts(Transactions transactions) throws BusinessException;
 	
+	public int insertTransaction(Transactions transactions) throws BusinessException;
+	public int updateReceiver(CustomerAccount customerAccount) throws BusinessException;
+	public int updateSender(CustomerAccount customerAccount) throws BusinessException;
+	public long deleteTransactionRequest (long requestId) throws BusinessException;
+	
 }

@@ -1,6 +1,7 @@
 package com.app.service.impl;
 
 import com.app.dao.impl.CustomerCrudDAOImpl;
+import com.app.dao.impl.CustomerSearchDAOImpl;
 import com.app.exception.BusinessException;
 import com.app.model.Customer;
 import com.app.model.CustomerAccount;
@@ -17,6 +18,7 @@ public class CustomerCrudServiceImpl implements CustomerCrudService {
 	private static Logger log = Logger.getLogger(CustomerCrudServiceImpl.class); 
 	
 	CustomerCrudDAOImpl dao = new CustomerCrudDAOImpl(); 
+	CustomerSearchDAOImpl dao2 = new CustomerSearchDAOImpl();
 
 	@Override
 	public Customer createCustomer(String customerFirstName, String customerLastName, String customerEmail,
@@ -98,14 +100,42 @@ public class CustomerCrudServiceImpl implements CustomerCrudService {
 	}
 
 	@Override
-	public TransactionRequests receiveMoney(long receivingAccount) throws BusinessException {
+	public TransactionRequests receiveMoney(long receivingAccount, long requestId) throws BusinessException {
 		TransactionRequests  transactionRequests  = null;
+		//long customerId =0;
+		long sendingAccountNumber =0;
+		
 		//code to DAO
-	
 		try {
-			if(dao.receiveMoney((int)receivingAccount) != 0) {
-				log.info("Money transfer was successful.");
-			}
+			//get information from database
+			long customerId = dao2.getReceiverId (receivingAccount);
+			long senderAccount = dao2.getSenderAccount(requestId);
+			long senderCustomerId = dao2.getSenderId (senderAccount);
+			long amount = dao2.getAmount (requestId);
+			
+			log.info("Service layer -> senderAccount: " + senderAccount);
+			log.info("Service layer -> receivingAccount: " + receivingAccount);
+			
+			//insert information into database
+			
+			//insert into transactions
+			Transactions transactions = new Transactions(amount, senderAccount, receivingAccount);
+			dao.insertTransaction(transactions);
+			
+			//update sender balance
+			CustomerAccount customerAccount = new CustomerAccount(amount,senderAccount);
+			dao.updateSender(customerAccount);
+			
+			//update receiver balance
+			CustomerAccount customerAccount2 = new CustomerAccount(amount,receivingAccount);
+			dao.updateReceiver(customerAccount2);
+			
+			//delete transactionrequest
+			dao.deleteTransactionRequest(requestId);
+			
+//			if(dao.receiveMoney((int)receivingAccount) != 0) {
+//				log.info("Money transfer was successful.");
+//			}
 		} catch (BusinessException e) {
 			log.info(e.getMessage());
 		}		
@@ -135,6 +165,22 @@ public class CustomerCrudServiceImpl implements CustomerCrudService {
 			log.info(e.getMessage());
 		}		
 		return transactions;
+	}
+
+	@Override
+	public TransactionRequests deleteRequest(int requestId) throws BusinessException {
+		TransactionRequests transactionRequests = null;
+		try {
+			if(dao.deleteTransactionRequest(requestId) != 0){
+				log.info("Transaction request " + requestId + " successfully deleted");
+			}else {
+				log.info("Deleting transaction request " + requestId + " was not successful");
+			}
+		}catch(BusinessException e) {
+			log.info(e.getMessage());
+		}
+			
+			return transactionRequests;
 	}
 	
 
