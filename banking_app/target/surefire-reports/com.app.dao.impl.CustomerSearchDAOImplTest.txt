@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.app.dao.impl.CustomerSearchDAOImplTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.481 s <<< FAILURE! - in com.app.dao.impl.CustomerSearchDAOImplTest
+testFindBalance  Time elapsed: 0.03 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <3641> but was: <3741>
+	at com.app.dao.impl.CustomerSearchDAOImplTest.testFindBalance(CustomerSearchDAOImplTest.java:52)
+

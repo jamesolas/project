@@ -19,6 +19,7 @@ import com.app.dao.dbutil.PostresqlConnection;
 import com.app.exception.BusinessException;
 import com.app.model.Customer;
 import com.app.model.CustomerAccount;
+import com.app.model.CustomerRequests;
 import com.app.model.Employee;
 import com.app.model.TransactionRequests;
 import com.app.model.Transactions;
@@ -45,7 +46,8 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO {
 				customer.setCustomerPassword(customerPassword);	
 				customer.setCustomerId(resultSet.getLong("customerid"));
 		}else {
-			throw new BusinessException("Username and password do not match");
+			//throw new BusinessException("Username and password do not match");
+			log.info("Username and password do not match");
 		}
 		}catch(ClassNotFoundException | SQLException e){
 			log.info(e);
@@ -149,12 +151,12 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO {
 	public long getSendingAccount(long transactionId) throws BusinessException {
 		long balance;
 		try(Connection connection = PostresqlConnection.getConnection()){
-			String sql = "select sendingaccount from project.transactions where transactionid = ?";
+			String sql = "select sendingaccountnumber from project.transactions where transactionid = ?";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setLong(1, transactionId);
 			ResultSet resultSet = preparedStatement.executeQuery();
 			if(resultSet.next()) {
-				balance = resultSet.getLong("accountbalance");	
+				balance = resultSet.getLong("sendingaccountnumber");	
 			}else {
 				throw new BusinessException("No account balance.");
 			}	
@@ -213,7 +215,7 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO {
 				employee.setPassword(resultSet.getString("password"));	
 				
 		}else {
-			throw new BusinessException("Username and password do not match");
+			log.info("Username and password do not match");
 		}
 		}catch(ClassNotFoundException | SQLException e){
 			log.info(e);
@@ -396,6 +398,41 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO {
 		}
 		
 		return senderAccount;
+	}
+
+	@Override
+	public List<CustomerRequests> viewCustomerRequests() throws BusinessException {
+		List<CustomerRequests> customerRequestsList = new ArrayList<>();
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "select * from project.newcustomerrequest";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			while(resultSet.next()) {
+				CustomerRequests customerRequests = new CustomerRequests();
+				customerRequests.setCustomerFirstName(resultSet.getString("customerfirstname"));
+				customerRequests.setCustomerLastName(resultSet.getString("customerlastname"));
+				customerRequests.setCustomerEmail(resultSet.getString("customeremail"));
+				customerRequests.setCustomerPassword(resultSet.getString("customerpassword"));
+				customerRequests.setCustomerDob(resultSet.getDate("dob"));
+				customerRequests.setAccountBalance(resultSet.getLong("accountbalance"));
+				customerRequests.setRequestId(resultSet.getLong("requestid"));
+				customerRequestsList.add(customerRequests);
+			}
+			if(customerRequestsList.size() == 0) {
+				log.info("No customer requests");
+			}
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		return customerRequestsList;
 	}
 	
 	

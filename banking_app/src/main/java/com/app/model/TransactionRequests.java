@@ -93,6 +93,45 @@ public class TransactionRequests {
 				+ ", receivingAccount=" + receivingAccount + ", requestId=" + requestId + "]";
 	}
 
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + (int) (amount ^ (amount >>> 32));
+		result = prime * result + ((date == null) ? 0 : date.hashCode());
+		result = prime * result + (int) (receivingAccount ^ (receivingAccount >>> 32));
+		result = prime * result + (int) (requestId ^ (requestId >>> 32));
+		result = prime * result + (int) (sendingAccount ^ (sendingAccount >>> 32));
+		return result;
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		TransactionRequests other = (TransactionRequests) obj;
+		if (amount != other.amount)
+			return false;
+		if (date == null) {
+			if (other.date != null)
+				return false;
+		} else if (!date.equals(other.date))
+			return false;
+		if (receivingAccount != other.receivingAccount)
+			return false;
+		if (requestId != other.requestId)
+			return false;
+		if (sendingAccount != other.sendingAccount)
+			return false;
+		return true;
+	}
+
 	
 	
 }

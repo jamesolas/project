@@ -1,6 +1,7 @@
 package com.app.main;
 
 import java.lang.reflect.Array;
+import java.nio.channels.ScatteringByteChannel;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -19,6 +20,7 @@ import com.app.dao.impl.CustomerSearchDAOImpl;
 import com.app.exception.BusinessException;
 import com.app.model.Customer;
 import com.app.model.CustomerAccount;
+import com.app.model.CustomerRequests;
 import com.app.model.Employee;
 import com.app.model.TransactionRequests;
 import com.app.model.Transactions;
@@ -46,15 +48,18 @@ public class bankingMain {
 			log.info("3)Employee Login");
 			log.info("4)Exit");
 			
+			Employee employee = null;
+			Customer customer = null;
 			String findId = null;
 			long findAccount = 0;
 			String customerFirstName=null;
 			String customerLastName=null;
 			String customerEmail=null;
+			String customerEmail2=null;
 			String customerPassword=null;
 			long accountBalance=0;
 			long getBalance = 0;
-			
+			long startingBalance = 0;
 			
 			try {
 				ch = sc.nextInt();
@@ -87,64 +92,52 @@ public class bankingMain {
 					if(customerPassword.length() <= 0) {
 						log.info("Please enter a password.");
 					}
-					
-					log.info("Enter your date of birth.");
-					String dateInput = sc.nextLine();
-					
+							
 					Date customerDob = null;			
 					SimpleDateFormat sdf = new SimpleDateFormat("dd-mm-yyyy");
-					
-					if(dateInput.matches("[0-9]{2}.[0-9]{2}.[0-9]{4}")){
-						sdf.setLenient(false);
-						
+					sdf.setLenient(false);
+					while (customerDob == null){
+						log.info("Enter your date of birth.");
+						String dateInput = sc.nextLine();
+						if(dateInput.matches("[0-9]{2}.[0-9]{2}.[0-9]{4}")){				
 						try {
 							customerDob = sdf.parse(dateInput);
 						}catch(ParseException e) {
 							System.out.println("invalid date");	
 						}
-					}else {
+						}else {
 						log.info("Invalid date");
+						}
 					}
+					log.info("Enter a starting balance.");
+					startingBalance = sc.nextLong();
+					sc.nextLine();
 					
 				try {
-					Customer customer = customerCrudService.createCustomer(customerFirstName, customerLastName, customerEmail, customerPassword, customerDob);
+					CustomerRequests createCustomer = customerCrudService.createCustomerRequest(customerFirstName, customerLastName, customerEmail, customerPassword, customerDob, startingBalance);
 				} catch (BusinessException e1) {
 					e1.printStackTrace();
 				  }
 					
-					log.info("Enter a starting balance.");
-					accountBalance = sc.nextLong();
-					sc.nextLine();
-					
-					//code to service
-				try {
-					CustomerAccount customerAccount = customerCrudService.createBalance(accountBalance);
-				} catch (BusinessException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}				
-					
 					
 			break;
-			case 2:
+			case 2: 
+				while(customer == null) {
 					log.info("Customer Login");
 					log.info("Enter your email.");
-					String customerEmail2 = sc.nextLine();
+					customerEmail2 = sc.nextLine();
 					log.info("Enter your password");
-					String customerPassword2 = sc.nextLine();
-				
+					String customerPassword2 = sc.nextLine();			
 						//code to service for logging in
-				Customer customer;
 				try {
 					customer = customerSearchService.customerLogin(customerEmail2, customerPassword2);
-					log.info(customer);
-					
-					
 				} catch (BusinessException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-						
+			}
+				log.info(customer);
+			
 						//code to service for finding customer Id
 				try {
 					findId = customerSearchService.findCustomerId(customerEmail2);
@@ -385,11 +378,13 @@ public class bankingMain {
 					}while(cr != 4);
 					break;
 					case 6: log.info("Exit");	
-					}}while(cm != 6);
+					}
+					}while(cm != 6);
 			
 			break;	
-			case 3:log.info("Employee Login");
-	
+			case 3:
+				while(employee == null) {
+				log.info("Employee Login");
 				log.info("Enter your email.");
 				String employeeEmail = sc.nextLine();
 				log.info("Enter your password");
@@ -397,22 +392,27 @@ public class bankingMain {
 		
 				//code to service for logging in
 				try {
-					Employee employee = customerSearchService.employeeLogin(employeeEmail, employeePassword);
-					log.info(employee);
+					employee = customerSearchService.employeeLogin(employeeEmail, employeePassword);
+					
 					//List<Customerlist> = new Array();
 				} catch (BusinessException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
+				  }
 				}
-				
+				log.info(employee);
+				int ce = 0;
 				do {
 					log.info("Employee Menu");
 					log.info("1)View customers' balances");
 					log.info("2)View all transactions");
 					log.info("3)Delete a customer account");
-					log.info("4)Exit");
+					log.info("4)View new customer requests");
+					log.info("5)Accept a new customer request");
+					log.info("6)Reject a new customer request");
+					log.info("7)Exit");
 					
-					int ce = 0;
+					
 					try {
 						ce=Integer.parseInt(sc.nextLine());
 					}catch(NumberFormatException e) {
@@ -458,12 +458,47 @@ public class bankingMain {
 						}
 						
 					break;
-					case 4: log.info("Exit");
+					case 4: log.info("4)View new customer requests");
+						try {
+							List<CustomerRequests> customerRequests = customerSearchService.viewCustomerRequests();
+							if(customerRequests != null) {
+								log.info(customerRequests);
+							}
+						} catch (BusinessException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					
+						
+					break;
+					case 5: log.info("5)Accept a new customer request");
+							log.info("Please enter a requestId to approve");
+							int requestId = Integer.parseInt(sc.nextLine());
+						try {
+							CustomerRequests customerRequests = customerCrudService.approveCustomerRequest(requestId);
+						} catch (BusinessException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						  }
+					
+					break;
+					case 6: log.info("6)Reject a new customer request");
+						log.info("Please enter a requestId to reject");
+						int requestId2 = Integer.parseInt(sc.nextLine());
+						try {
+							CustomerRequests customerRequests = customerCrudService.deleteCustomerRequest(requestId2);
+						} catch (BusinessException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+						
+					break;
+					case 7: log.info("Exit");
 					
 					break;
 					default: log.info("Invalid menu option");
 					}
-				}while(ch != 4);
+				}while(ce != 7);
 		
 			break;
 			case 4:log.info("Exit");

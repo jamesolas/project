@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CustomerSearchDAOImplTest.testGetDate" project="banking_app" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.app.dao.impl.CustomerSearchDAOImplTest" time="0.103" displayname="CustomerSearchDAOImplTest" uniqueid="[engine:junit-jupiter]/[class:com.app.dao.impl.CustomerSearchDAOImplTest]">
+    <testcase name="testGetDate" classname="com.app.dao.impl.CustomerSearchDAOImplTest" time="0.103" displayname="testGetDate()" uniqueid="[engine:junit-jupiter]/[class:com.app.dao.impl.CustomerSearchDAOImplTest]/[method:testGetDate()]"/>
+  </testsuite>
+</testrun>

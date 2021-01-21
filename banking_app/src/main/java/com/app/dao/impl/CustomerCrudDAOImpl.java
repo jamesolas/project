@@ -13,6 +13,7 @@ import com.app.dao.dbutil.PostresqlConnection;
 import com.app.exception.BusinessException;
 import com.app.model.Customer;
 import com.app.model.CustomerAccount;
+import com.app.model.CustomerRequests;
 import com.app.model.TransactionRequests;
 import com.app.model.Transactions;
 
@@ -23,18 +24,18 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 	Transactions transactions = new Transactions();
 	
 	@Override
-	public int createCustomer(Customer customer) throws BusinessException {
+	public int createCustomerRequest(CustomerRequests customerRequests) throws BusinessException {
 		int c = 0;
 		try(Connection connection = PostresqlConnection.getConnection()){
-			String sql = "insert into project.customer(customerfirstname, customerlastname, customeremail,"
-				+" customerpassword, dob) values(?,?,?,?,?)";
+			String sql = "insert into project.newcustomerrequest(customerfirstname, customerlastname, customeremail,"
+				+" customerpassword, dob, accountbalance) values(?,?,?,?,?,?)";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
-			preparedStatement.setString(1, customer.getCustomerFirstName());
-			preparedStatement.setString(2, customer.getCustomerLastName());
-			preparedStatement.setString(3, customer.getCustomerEmail());
-			preparedStatement.setString(4, customer.getCustomerPassword());
-			preparedStatement.setDate(5, new java.sql.Date(customer.getCustomerDob().getTime()));
-			//preparedStatement.setDate(5,java.sql.Date.valueOf(java.time.LocalDate.now()));
+			preparedStatement.setString(1, customerRequests.getCustomerFirstName());
+			preparedStatement.setString(2, customerRequests.getCustomerLastName());
+			preparedStatement.setString(3, customerRequests.getCustomerEmail());
+			preparedStatement.setString(4, customerRequests.getCustomerPassword());
+			preparedStatement.setDate(5, new java.sql.Date(customerRequests.getCustomerDob().getTime()));
+			preparedStatement.setLong(6, customerRequests.getAccountBalance());
 			c = preparedStatement.executeUpdate();
 		
 		}catch(ClassNotFoundException | SQLException e){
@@ -66,7 +67,6 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 		try(Connection connection = PostresqlConnection.getConnection()){
 			String sql = "delete from project.customer where customerid = ?";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
-			Customer customer = new Customer();
 			preparedStatement.setLong(1, customerId);
 			
 			c = preparedStatement.executeUpdate();
@@ -86,6 +86,8 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setLong(1, customerAccount.getAmount());
 			preparedStatement.setLong(2, customerAccount.getCustomerId());
+			
+			log.info("deposit -> customerAccount.getCustomerId() " + customerAccount.getCustomerId());
 			
 			c = preparedStatement.executeUpdate();
 			
@@ -273,12 +275,13 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 	public int updateReceiver(CustomerAccount customerAccount) throws BusinessException {
 		int c = 0;
 		try(Connection connection = PostresqlConnection.getConnection()){
-			String sql = "update project.account set accountbalance = accountbalance + ? where accountnumber = ?";
+			String sql = "update project.account set accountbalance = accountbalance + ? where customerid = ?";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setLong(1, customerAccount.getAmount());
-			preparedStatement.setLong(2, customerAccount.getAccountNumber());
+			preparedStatement.setLong(2, customerAccount.getCustomerId());
 			
-			log.info("updateReceiver -> getAccountNumber() = " + customerAccount.getAccountNumber());
+			log.info("updateReceiver -> getAmount() " + customerAccount.getAmount());
+			log.info("updateReceiver -> getAccountNumber() = " + customerAccount.getCustomerId());
 			c = preparedStatement.executeUpdate();
 			
 		}catch(ClassNotFoundException | SQLException e) {
@@ -292,12 +295,13 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 	public int updateSender(CustomerAccount customerAccount) throws BusinessException {
 		int c = 0;
 		try(Connection connection = PostresqlConnection.getConnection()){
-			String sql = "update project.account set accountbalance = accountbalance - ? where accountnumber = ?";
+			String sql = "update project.account set accountbalance = accountbalance - ? where customerid = ?";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setLong(1, customerAccount.getAmount());
-			preparedStatement.setLong(2, customerAccount.getAccountNumber());
-
-			log.info("updateSender -> getAccountNumber() = " + customerAccount.getAccountNumber());
+			preparedStatement.setLong(2, customerAccount.getCustomerId());
+			
+			log.info("updateSender -> getAmount() " + customerAccount.getAmount());
+			log.info("updateSender -> getAccountNumber() = " + customerAccount.getCustomerId());
 			c = preparedStatement.executeUpdate();
 			
 		}catch(ClassNotFoundException | SQLException e) {
@@ -325,10 +329,62 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 		return c;
 	}
 
-	
-
-
-
+	public int approveCustomer (long requestId) throws BusinessException {
+		int c = 0;
+		int d = 0;
+		int f = 0;
+		
+		try(Connection connection = PostresqlConnection.getConnection()){
+			String sql = "insert into project.customer(customerfirstname, customerlastname, customeremail, customerpassword, dob) "
+					+ "select customerfirstname, customerlastname, customeremail, customerpassword, dob "
+					+ "from project.newcustomerrequest where requestid = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, requestId);
+			c = preparedStatement.executeUpdate();
+			
+			if(c != 0) {
+				String sql2 = "insert into project.account (accountbalance) select accountbalance from project.newcustomerrequest where requestid = ?";
+				PreparedStatement preparedStatement2 = connection.prepareStatement(sql2);
+				preparedStatement2.setLong(1, requestId);
+				d = preparedStatement2.executeUpdate();
+			}
+			
+			if(d != 0) {
+				String sql3 = "delete from project.newcustomerrequest where requestid = ?";
+				PreparedStatement preparedStatement3 = connection.prepareStatement(sql3);
+				preparedStatement3.setLong(1, requestId);
+				f = preparedStatement3.executeUpdate();
+			}
+			
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return c;
+	}
+		
+	public int deleteCustomerRequest (long requestId) throws BusinessException {
+		int c = 0;
+		try( Connection connection = PostresqlConnection.getConnection()){
+			String sql = "delete from project.newcustomerrequest where requestid = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setLong(1, requestId);
+			c = preparedStatement.executeUpdate();
+			
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return c;
+	}
 
 
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CustomerSearchDAOImplTest" project="banking_app" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.app.dao.impl.CustomerSearchDAOImplTest" time="0.158" displayname="CustomerSearchDAOImplTest" uniqueid="[engine:junit-jupiter]/[class:com.app.dao.impl.CustomerSearchDAOImplTest]">
+    <testcase name="testFindAccountNumber" classname="com.app.dao.impl.CustomerSearchDAOImplTest" time="0.098" displayname="testFindAccountNumber()" uniqueid="[engine:junit-jupiter]/[class:com.app.dao.impl.CustomerSearchDAOImplTest]/[method:testFindAccountNumber()]"/>
+    <testcase name="testFindBalance" classname="com.app.dao.impl.CustomerSearchDAOImplTest" time="0.028" displayname="testFindBalance()" uniqueid="[engine:junit-jupiter]/[class:com.app.dao.impl.CustomerSearchDAOImplTest]/[method:testFindBalance()]"/>
+    <testcase name="testFindCustomerId" classname="com.app.dao.impl.CustomerSearchDAOImplTest" time="0.032" displayname="testFindCustomerId()" uniqueid="[engine:junit-jupiter]/[class:com.app.dao.impl.CustomerSearchDAOImplTest]/[method:testFindCustomerId()]"/>
+  </testsuite>
+</testrun>

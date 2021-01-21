@@ -9,6 +9,7 @@ import com.app.dao.impl.CustomerSearchDAOImpl;
 import com.app.exception.BusinessException;
 import com.app.model.Customer;
 import com.app.model.CustomerAccount;
+import com.app.model.CustomerRequests;
 import com.app.model.Employee;
 import com.app.model.TransactionRequests;
 import com.app.model.Transactions;
@@ -28,6 +29,7 @@ public class CustomerSearchServiceImpl implements CustomerSearchService {
 		if(customerEmail.length() > 0 && customerPassword.length() > 0) {
 			//code here for DAO
 			customer = customerSearchDAO.customerLogin(customerEmail, customerPassword);
+		
 		}else {
 			throw new BusinessException ("Entered email and password are invalid.");
 		}
@@ -121,9 +123,12 @@ public class CustomerSearchServiceImpl implements CustomerSearchService {
 	return viewTransactions;
 	}
 
-	
-
-	
-	
+	@Override
+	public List<CustomerRequests> viewCustomerRequests() throws BusinessException {
+		List<CustomerRequests> viewCustomerRequests = null;
+		//code to DAO
+		viewCustomerRequests = customerSearchDAO.viewCustomerRequests();
+		return viewCustomerRequests;
+	}
 	
 }

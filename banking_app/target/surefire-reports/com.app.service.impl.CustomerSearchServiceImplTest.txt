@@ -1,40 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.app.service.impl.CustomerSearchServiceImplTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 0.022 s <<< FAILURE! - in com.app.service.impl.CustomerSearchServiceImplTest
-testFindReceiving  Time elapsed: 0.01 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: Not yet implemented
-	at com.app.service.impl.CustomerSearchServiceImplTest.testFindReceiving(CustomerSearchServiceImplTest.java:36)
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.01 s <<< FAILURE! - in com.app.service.impl.CustomerSearchServiceImplTest
+testCustomerLogin  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <email> but was: <null>
+	at com.app.service.impl.CustomerSearchServiceImplTest.testCustomerLogin(CustomerSearchServiceImplTest.java:31)
 
-testViewBalance  Time elapsed: 0 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: Not yet implemented
-	at com.app.service.impl.CustomerSearchServiceImplTest.testViewBalance(CustomerSearchServiceImplTest.java:16)
-
-testFindAccountNumber  Time elapsed: 0 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: Not yet implemented
-	at com.app.service.impl.CustomerSearchServiceImplTest.testFindAccountNumber(CustomerSearchServiceImplTest.java:26)
-
-testViewAllTransactions  Time elapsed: 0 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: Not yet implemented
-	at com.app.service.impl.CustomerSearchServiceImplTest.testViewAllTransactions(CustomerSearchServiceImplTest.java:51)
-
-testCustomerLogin  Time elapsed: 0.001 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: Not yet implemented
-	at com.app.service.impl.CustomerSearchServiceImplTest.testCustomerLogin(CustomerSearchServiceImplTest.java:11)
-
-testFindBalance  Time elapsed: 0 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: Not yet implemented
-	at com.app.service.impl.CustomerSearchServiceImplTest.testFindBalance(CustomerSearchServiceImplTest.java:31)
-
-testEmployeeLogin  Time elapsed: 0 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: Not yet implemented
-	at com.app.service.impl.CustomerSearchServiceImplTest.testEmployeeLogin(CustomerSearchServiceImplTest.java:41)
-
-testFindCustomerId  Time elapsed: 0 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: Not yet implemented
-	at com.app.service.impl.CustomerSearchServiceImplTest.testFindCustomerId(CustomerSearchServiceImplTest.java:21)
-
-testViewCustomerBalances  Time elapsed: 0 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: Not yet implemented
-	at com.app.service.impl.CustomerSearchServiceImplTest.testViewCustomerBalances(CustomerSearchServiceImplTest.java:46)
+testFindCustomerId  Time elapsed: 0.01 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: java.lang.Long@5af97850<1> but was: java.lang.String@5ef60048<1>
+	at com.app.service.impl.CustomerSearchServiceImplTest.testFindCustomerId(CustomerSearchServiceImplTest.java:44)
 

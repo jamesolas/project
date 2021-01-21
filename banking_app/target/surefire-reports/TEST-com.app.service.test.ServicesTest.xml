@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.app.service.test.ServicesTest" time="0.14" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.app.service.test.ServicesTest" time="0.038" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -7,7 +7,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\j_ola\Desktop\Project Folder\Project\banking_app\target\test-classes;C:\Users\j_ola\Desktop\Project Folder\Project\banking_app\target\classes;C:\Users\j_ola\.m2\repository\org\postgresql\postgresql\42.2.5\postgresql-42.2.5.jar;C:\Users\j_ola\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\j_ola\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\j_ola\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\j_ola\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\j_ola\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\j_ola\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\j_ola\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;"/>
+    <property name="java.class.path" value="C:\Users\j_ola\Desktop\Project Folder\Project\banking_app\target\test-classes;C:\Users\j_ola\Desktop\Project Folder\Project\banking_app\target\classes;C:\Users\j_ola\.m2\repository\org\postgresql\postgresql\42.2.5\postgresql-42.2.5.jar;C:\Users\j_ola\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\j_ola\.m2\repository\org\mockito\mockito-all\2.0.1-beta\mockito-all-2.0.1-beta.jar;C:\Users\j_ola\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\j_ola\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\j_ola\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\j_ola\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\j_ola\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\j_ola\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -18,8 +18,8 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\j_ola\AppData\Local\Temp\surefire4925692741491779095\surefirebooter4959347978370462215.jar C:\Users\j_ola\AppData\Local\Temp\surefire4925692741491779095 2021-01-12T23-47-42_757-jvmRun1 surefire6399354437196527418tmp surefire_06419879067911302061tmp"/>
-    <property name="surefire.test.class.path" value="C:\Users\j_ola\Desktop\Project Folder\Project\banking_app\target\test-classes;C:\Users\j_ola\Desktop\Project Folder\Project\banking_app\target\classes;C:\Users\j_ola\.m2\repository\org\postgresql\postgresql\42.2.5\postgresql-42.2.5.jar;C:\Users\j_ola\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\j_ola\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\j_ola\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\j_ola\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\j_ola\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\j_ola\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\j_ola\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;"/>
+    <property name="sun.java.command" value="C:\Users\j_ola\AppData\Local\Temp\surefire5494941252338444043\surefirebooter9066787350316553009.jar C:\Users\j_ola\AppData\Local\Temp\surefire5494941252338444043 2021-01-16T20-38-40_685-jvmRun1 surefire3824256245589815412tmp surefire_0453844760847352243tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\j_ola\Desktop\Project Folder\Project\banking_app\target\test-classes;C:\Users\j_ola\Desktop\Project Folder\Project\banking_app\target\classes;C:\Users\j_ola\.m2\repository\org\postgresql\postgresql\42.2.5\postgresql-42.2.5.jar;C:\Users\j_ola\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\j_ola\.m2\repository\org\mockito\mockito-all\2.0.1-beta\mockito-all-2.0.1-beta.jar;C:\Users\j_ola\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\j_ola\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\j_ola\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\j_ola\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\j_ola\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\j_ola\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\j_ola"/>
     <property name="user.language" value="en"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\j_ola\AppData\Local\Temp\surefire4925692741491779095\surefirebooter4959347978370462215.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\j_ola\AppData\Local\Temp\surefire5494941252338444043\surefirebooter9066787350316553009.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_271\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,11 +61,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testDeposit" classname="com.app.service.test.ServicesTest" time="0.117">
-    <failure message="expected: java.lang.String@400cff1a&lt;CustomerAccount [accountNumber=0, customerId=1, accountBalance=0, amount=100, date=null]&gt; but was: com.app.model.CustomerAccount@275710fc&lt;CustomerAccount [accountNumber=0, customerId=1, accountBalance=0, amount=100, date=null]&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: java.lang.String@400cff1a<CustomerAccount [accountNumber=0, customerId=1, accountBalance=0, amount=100, date=null]> but was: com.app.model.CustomerAccount@275710fc<CustomerAccount [accountNumber=0, customerId=1, accountBalance=0, amount=100, date=null]>
-	at com.app.service.test.ServicesTest.testDeposit(ServicesTest.java:27)
+  <testcase name="testDeposit" classname="com.app.service.test.ServicesTest" time="0.038">
+    <failure message="expected: java.lang.String@1d548a08&lt;CustomerAccount [accountNumber=0, customerId=1, accountBalance=0, amount=100, date=null]&gt; but was: com.app.model.CustomerAccount@16aa0a0a&lt;CustomerAccount [accountNumber=0, customerId=1, accountBalance=0, amount=100, date=null]&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: java.lang.String@1d548a08<CustomerAccount [accountNumber=0, customerId=1, accountBalance=0, amount=100, date=null]> but was: com.app.model.CustomerAccount@16aa0a0a<CustomerAccount [accountNumber=0, customerId=1, accountBalance=0, amount=100, date=null]>
+	at com.app.service.test.ServicesTest.testDeposit(ServicesTest.java:43)
 ]]></failure>
-    <system-out><![CDATA[Deposit was successful.
+    <system-out><![CDATA[deposit -> customerAccount.getCustomerId() 1
+Deposit was successful.
 ]]></system-out>
   </testcase>
 </testsuite>

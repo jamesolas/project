@@ -1,0 +1,626 @@
+{INFO}  com.app.main.bankingMain  View incoming money transfers.  14-01-2021 PST 22:55
+{INFO}  com.app.main.bankingMain     Account Number: 9  14-01-2021 PST 22:55
+{INFO}  com.app.main.bankingMain         Receive money  14-01-2021 PST 22:55
+{INFO}  com.app.main.bankingMain  1)View incoming money transfers.  14-01-2021 PST 22:55
+{INFO}  com.app.main.bankingMain  2)Accept an incoming money transfer.  14-01-2021 PST 22:55
+{INFO}  com.app.main.bankingMain  3)Reject an incoming money transfer.  14-01-2021 PST 22:55
+{INFO}  com.app.main.bankingMain                4)Exit  14-01-2021 PST 22:55
+{INFO}  com.app.main.bankingMain  Accept an incoming money transfer.  14-01-2021 PST 22:55
+{INFO}  com.app.main.bankingMain  Enter a transaction request Id to accept  14-01-2021 PST 22:55
+{INFO}  com.app.main.bankingMain     Account Number: 9  14-01-2021 PST 22:55
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl                    10  14-01-2021 PST 22:55
+{INFO}  com.app.service.impl.CustomerCrudServiceImpl  Service layer -> senderAccount: 10  14-01-2021 PST 22:55
+{INFO}  com.app.service.impl.CustomerCrudServiceImpl  Service layer -> receivingAccount: 9  14-01-2021 PST 22:55
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  insert transaction log  14-01-2021 PST 22:55
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  updateSender -> getAccountNumber() = 0  14-01-2021 PST 22:55
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  updateReceiver -> getAccountNumber() = 0  14-01-2021 PST 22:55
+{INFO}  com.app.main.bankingMain         Receive money  14-01-2021 PST 22:55
+{INFO}  com.app.main.bankingMain  1)View incoming money transfers.  14-01-2021 PST 22:55
+{INFO}  com.app.main.bankingMain  2)Accept an incoming money transfer.  14-01-2021 PST 22:55
+{INFO}  com.app.main.bankingMain  3)Reject an incoming money transfer.  14-01-2021 PST 22:55
+{INFO}  com.app.main.bankingMain                4)Exit  14-01-2021 PST 22:55
+{INFO}  com.app.main.bankingMain                  Exit  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain         Customer Menu  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain        1)View Balance  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain       2)Deposit money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain      3)Withdraw money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain          4)Send money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain       5)Receive money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain                6)Exit  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain         Receive money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain  1)View incoming money transfers.  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain  2)Accept an incoming money transfer.  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain  3)Reject an incoming money transfer.  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain                4)Exit  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain                  Exit  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain         Customer Menu  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain        1)View Balance  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain       2)Deposit money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain      3)Withdraw money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain          4)Send money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain       5)Receive money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain                6)Exit  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain                  Exit  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain  Please select a choice.  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain      2)Customer login  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain      3)Employee Login  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain                4)Exit  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain        Customer Login  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain     Enter your email.  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain   Enter your password  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain  Customer [customerId=2, customerFirstName=null, customerLastName=null, customerAge=null, customerEmail=man@email, customerPassword=pass, customerDob=null, AccountBalance=0, AccountNumber=0]  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain        Customer Id: 2  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain    Account Number: 10  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain         Balance: 1591  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain         Customer Menu  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain        1)View Balance  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain       2)Deposit money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain      3)Withdraw money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain          4)Send money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain       5)Receive money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain                6)Exit  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain            Send money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain                  1591  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain         Enter amount.  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain  Please enter an account number to send money to.  14-01-2021 PST 23:07
+{INFO}  com.app.service.impl.CustomerCrudServiceImpl  Sending money request was successful.  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain         Customer Menu  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain        1)View Balance  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain       2)Deposit money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain      3)Withdraw money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain          4)Send money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain       5)Receive money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain                6)Exit  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain            Send money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain                  1591  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain         Enter amount.  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain  Please enter an account number to send money to.  14-01-2021 PST 23:07
+{INFO}  com.app.service.impl.CustomerCrudServiceImpl  Sending money request was successful.  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain         Customer Menu  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain        1)View Balance  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain       2)Deposit money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain      3)Withdraw money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain          4)Send money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain       5)Receive money  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain                6)Exit  14-01-2021 PST 23:07
+{INFO}  com.app.main.bankingMain                  Exit  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain  Please select a choice.  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain      2)Customer login  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain      3)Employee Login  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain                4)Exit  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain        Customer Login  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain     Enter your email.  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain   Enter your password  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain  Customer [customerId=1, customerFirstName=null, customerLastName=null, customerAge=null, customerEmail=email, customerPassword=pass, customerDob=null, AccountBalance=0, AccountNumber=0]  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain        Customer Id: 1  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain     Account Number: 9  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain         Balance: 3491  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain         Customer Menu  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain        1)View Balance  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain       2)Deposit money  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain      3)Withdraw money  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain          4)Send money  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain       5)Receive money  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain                6)Exit  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain         Receive money  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain  1)View incoming money transfers.  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain  2)Accept an incoming money transfer.  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain  3)Reject an incoming money transfer.  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain                4)Exit  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain  View incoming money transfers.  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain     Account Number: 9  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain         Receive money  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain  1)View incoming money transfers.  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain  2)Accept an incoming money transfer.  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain  3)Reject an incoming money transfer.  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain                4)Exit  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain  Accept an incoming money transfer.  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain  Enter a transaction request Id to accept  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain     Account Number: 9  14-01-2021 PST 23:08
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl                    10  14-01-2021 PST 23:08
+{INFO}  com.app.service.impl.CustomerCrudServiceImpl  Service layer -> senderAccount: 10  14-01-2021 PST 23:08
+{INFO}  com.app.service.impl.CustomerCrudServiceImpl  Service layer -> receivingAccount: 9  14-01-2021 PST 23:08
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  insert transaction log  14-01-2021 PST 23:08
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  updateSender -> getAccountNumber() = 0  14-01-2021 PST 23:08
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  updateReceiver -> getAccountNumber() = 0  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain         Receive money  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain  1)View incoming money transfers.  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain  2)Accept an incoming money transfer.  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain  3)Reject an incoming money transfer.  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain                4)Exit  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain                  Exit  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain         Customer Menu  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain        1)View Balance  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain       2)Deposit money  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain      3)Withdraw money  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain          4)Send money  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain       5)Receive money  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain                6)Exit  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain          View Balance  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain       Balance is 3491  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain                     
+  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain         Customer Menu  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain        1)View Balance  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain       2)Deposit money  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain      3)Withdraw money  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain          4)Send money  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain       5)Receive money  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain                6)Exit  14-01-2021 PST 23:08
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain  Please select a choice.  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain      2)Customer login  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain      3)Employee Login  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain                4)Exit  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain        Customer Login  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain     Enter your email.  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain   Enter your password  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain  Customer [customerId=1, customerFirstName=null, customerLastName=null, customerAge=null, customerEmail=email, customerPassword=pass, customerDob=null, AccountBalance=0, AccountNumber=0]  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain        Customer Id: 1  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain     Account Number: 9  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain         Balance: 3491  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain         Customer Menu  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain        1)View Balance  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain       2)Deposit money  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain      3)Withdraw money  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain          4)Send money  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain       5)Receive money  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain                6)Exit  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain         Deposit Money  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain        customerId = 1  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain  account balance = 3491  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain  Enter deposit amount.  15-01-2021 PST 11:41
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl                     1  15-01-2021 PST 11:41
+{INFO}  com.app.service.impl.CustomerCrudServiceImpl  Deposit was successful.  15-01-2021 PST 11:41
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl        getAmount: 100  15-01-2021 PST 11:41
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl   getAccountNumber: 9  15-01-2021 PST 11:41
+{INFO}  com.app.service.impl.CustomerCrudServiceImpl  Updating the transactions log was successful.  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain     New balance: 3591  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain         Customer Menu  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain        1)View Balance  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain       2)Deposit money  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain      3)Withdraw money  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain          4)Send money  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain       5)Receive money  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain                6)Exit  15-01-2021 PST 11:41
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain  Please select a choice.  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain      2)Customer login  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain      3)Employee Login  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain                4)Exit  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain        Customer Login  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain     Enter your email.  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain   Enter your password  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain  Customer [customerId=1, customerFirstName=null, customerLastName=null, customerAge=null, customerEmail=email, customerPassword=pass, customerDob=null, AccountBalance=0, AccountNumber=0]  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain        Customer Id: 1  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain     Account Number: 9  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain         Balance: 3591  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain         Customer Menu  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain        1)View Balance  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain       2)Deposit money  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain      3)Withdraw money  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain          4)Send money  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain       5)Receive money  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain                6)Exit  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain         Receive money  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain  1)View incoming money transfers.  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain  2)Accept an incoming money transfer.  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain  3)Reject an incoming money transfer.  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain                4)Exit  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain  View incoming money transfers.  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain     Account Number: 9  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain         Receive money  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain  1)View incoming money transfers.  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain  2)Accept an incoming money transfer.  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain  3)Reject an incoming money transfer.  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain                4)Exit  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain  Accept an incoming money transfer.  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain  Enter a transaction request Id to accept  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain     Account Number: 9  15-01-2021 PST 15:35
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl                    10  15-01-2021 PST 15:35
+{INFO}  com.app.service.impl.CustomerCrudServiceImpl  Service layer -> senderAccount: 10  15-01-2021 PST 15:35
+{INFO}  com.app.service.impl.CustomerCrudServiceImpl  Service layer -> receivingAccount: 9  15-01-2021 PST 15:35
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  insert transaction log  15-01-2021 PST 15:35
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  updateSender -> getAmount() 50  15-01-2021 PST 15:35
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  updateSender -> getAccountNumber() = 0  15-01-2021 PST 15:35
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  updateReceiver -> getAmount() 50  15-01-2021 PST 15:35
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  updateReceiver -> getAccountNumber() = 0  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain         Receive money  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain  1)View incoming money transfers.  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain  2)Accept an incoming money transfer.  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain  3)Reject an incoming money transfer.  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain                4)Exit  15-01-2021 PST 15:35
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain  Please select a choice.  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain      2)Customer login  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain      3)Employee Login  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain                4)Exit  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain        Customer Login  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain     Enter your email.  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain   Enter your password  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain  Customer [customerId=2, customerFirstName=null, customerLastName=null, customerAge=null, customerEmail=man@email, customerPassword=pass, customerDob=null, AccountBalance=0, AccountNumber=0]  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain        Customer Id: 2  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain    Account Number: 10  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain         Balance: 1591  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain         Customer Menu  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain        1)View Balance  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain       2)Deposit money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain      3)Withdraw money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain          4)Send money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain       5)Receive money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain                6)Exit  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain            Send money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain                  1591  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain         Enter amount.  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain  Please enter an account number to send money to.  15-01-2021 PST 16:50
+{INFO}  com.app.service.impl.CustomerCrudServiceImpl  Sending money request was successful.  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain         Customer Menu  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain        1)View Balance  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain       2)Deposit money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain      3)Withdraw money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain          4)Send money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain       5)Receive money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain                6)Exit  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain            Send money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain                  1591  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain         Enter amount.  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain  Please enter an account number to send money to.  15-01-2021 PST 16:50
+{INFO}  com.app.service.impl.CustomerCrudServiceImpl  Sending money request was successful.  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain         Customer Menu  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain        1)View Balance  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain       2)Deposit money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain      3)Withdraw money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain          4)Send money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain       5)Receive money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain                6)Exit  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain            Send money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain                  1591  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain         Enter amount.  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain  Please enter an account number to send money to.  15-01-2021 PST 16:50
+{INFO}  com.app.service.impl.CustomerCrudServiceImpl  Sending money request was successful.  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain         Customer Menu  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain        1)View Balance  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain       2)Deposit money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain      3)Withdraw money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain          4)Send money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain       5)Receive money  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain                6)Exit  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain                  Exit  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain  Please select a choice.  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain      2)Customer login  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain      3)Employee Login  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain                4)Exit  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain        Customer Login  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain     Enter your email.  15-01-2021 PST 16:50
+{INFO}  com.app.main.bankingMain   Enter your password  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain  Customer [customerId=1, customerFirstName=null, customerLastName=null, customerAge=null, customerEmail=email, customerPassword=pass, customerDob=null, AccountBalance=0, AccountNumber=0]  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain        Customer Id: 1  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain     Account Number: 9  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain         Balance: 3591  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain         Customer Menu  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain        1)View Balance  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain       2)Deposit money  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain      3)Withdraw money  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain          4)Send money  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain       5)Receive money  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain                6)Exit  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain         Receive money  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain  1)View incoming money transfers.  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain  2)Accept an incoming money transfer.  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain  3)Reject an incoming money transfer.  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain                4)Exit  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain  View incoming money transfers.  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain     Account Number: 9  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain         Receive money  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain  1)View incoming money transfers.  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain  2)Accept an incoming money transfer.  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain  3)Reject an incoming money transfer.  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain                4)Exit  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain  Accept an incoming money transfer.  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain  Enter a transaction request Id to accept  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain     Account Number: 9  15-01-2021 PST 16:51
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl                    10  15-01-2021 PST 16:51
+{INFO}  com.app.service.impl.CustomerCrudServiceImpl  Service layer -> senderAccount: 10  15-01-2021 PST 16:51
+{INFO}  com.app.service.impl.CustomerCrudServiceImpl  Service layer -> receivingAccount: 9  15-01-2021 PST 16:51
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  insert transaction log  15-01-2021 PST 16:51
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  updateSender -> getAmount() 50  15-01-2021 PST 16:51
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  updateSender -> getAccountNumber() = 2  15-01-2021 PST 16:51
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  updateReceiver -> getAmount() 50  15-01-2021 PST 16:51
+{INFO}  com.app.dao.impl.CustomerCrudDAOImpl  updateReceiver -> getAccountNumber() = 1  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain         Receive money  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain  1)View incoming money transfers.  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain  2)Accept an incoming money transfer.  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain  3)Reject an incoming money transfer.  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain                4)Exit  15-01-2021 PST 16:51
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain  Please select a choice.  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain      2)Customer login  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain      3)Employee Login  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain                4)Exit  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain        Customer Login  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain     Enter your email.  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain   Enter your password  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain  Customer [customerId=1, customerFirstName=null, customerLastName=null, customerAge=null, customerEmail=email, customerPassword=pass, customerDob=null, AccountBalance=0, AccountNumber=0]  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain        Customer Id: 1  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain     Account Number: 9  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain         Balance: 3641  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain         Customer Menu  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain        1)View Balance  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain       2)Deposit money  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain      3)Withdraw money  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain          4)Send money  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain       5)Receive money  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain                6)Exit  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain          View Balance  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain       Balance is 3641  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain                     
+  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain         Customer Menu  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain        1)View Balance  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain       2)Deposit money  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain      3)Withdraw money  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain          4)Send money  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain       5)Receive money  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain                6)Exit  15-01-2021 PST 22:27
+{INFO}  com.app.main.bankingMain          View Balance  16-01-2021 PST 11:34
+{INFO}  com.app.main.bankingMain       Balance is 3641  16-01-2021 PST 11:34
+{INFO}  com.app.main.bankingMain                     
+  16-01-2021 PST 11:34
+{INFO}  com.app.main.bankingMain         Customer Menu  16-01-2021 PST 11:34
+{INFO}  com.app.main.bankingMain        1)View Balance  16-01-2021 PST 11:34
+{INFO}  com.app.main.bankingMain       2)Deposit money  16-01-2021 PST 11:34
+{INFO}  com.app.main.bankingMain      3)Withdraw money  16-01-2021 PST 11:34
+{INFO}  com.app.main.bankingMain          4)Send money  16-01-2021 PST 11:34
+{INFO}  com.app.main.bankingMain       5)Receive money  16-01-2021 PST 11:34
+{INFO}  com.app.main.bankingMain                6)Exit  16-01-2021 PST 11:34
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl  org.postgresql.util.PSQLException: ERROR: column "sendingaccount" does not exist
+  Position: 8  16-01-2021 PST 14:55
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl  org.postgresql.util.PSQLException: The column name accountbalance was not found in this ResultSet.  16-01-2021 PST 14:56
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl                     9  16-01-2021 PST 15:14
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl                     9  16-01-2021 PST 15:18
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl                     9  16-01-2021 PST 15:18
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl                     9  16-01-2021 PST 15:34
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl                     9  16-01-2021 PST 15:56
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl                     9  16-01-2021 PST 16:11
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl                     9  16-01-2021 PST 16:14
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl                     9  16-01-2021 PST 16:33
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl                     9  16-01-2021 PST 16:33
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl                     9  16-01-2021 PST 16:34
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl                     9  16-01-2021 PST 16:34
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain  Please select a choice.  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain      2)Customer login  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain      3)Employee Login  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain        Customer Login  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain     Enter your email.  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain   Enter your password  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain        Customer Id: 1  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain     Account Number: 9  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain         Balance: 3641  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain         Customer Menu  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain        1)View Balance  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain       2)Deposit money  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain      3)Withdraw money  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain          4)Send money  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain       5)Receive money  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain                6)Exit  16-01-2021 PST 17:05
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain  Please select a choice.  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain      2)Customer login  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain      3)Employee Login  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain        Customer Login  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain     Enter your email.  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain   Enter your password  16-01-2021 PST 17:39
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl  Username and password do not match  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain                        16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain        Customer Id: 1  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain     Account Number: 9  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain         Balance: 3641  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain         Customer Menu  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain        1)View Balance  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain       2)Deposit money  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain      3)Withdraw money  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain          4)Send money  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain       5)Receive money  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain                6)Exit  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain                  Exit  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain  Please select a choice.  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain      2)Customer login  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain      3)Employee Login  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain        Employee Login  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain     Enter your email.  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain   Enter your password  16-01-2021 PST 17:39
+{INFO}  com.app.main.bankingMain  Employee [employeeId=0, firstName=java, lastName=coder, email=javacoder@email, password=java]  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain         Employee Menu  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain  1)View customers' balances  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain  2)View all transactions  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain  3)Delete a customer account  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain                  Exit  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain         Employee Menu  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain  1)View customers' balances  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain  2)View all transactions  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain  3)Delete a customer account  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain                  Exit  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain         Employee Menu  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain  1)View customers' balances  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain  2)View all transactions  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain  3)Delete a customer account  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain                  Exit  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain         Employee Menu  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain  1)View customers' balances  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain  2)View all transactions  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain  3)Delete a customer account  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 17:40
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  16-01-2021 PST 17:42
+{INFO}  com.app.main.bankingMain  Please select a choice.  16-01-2021 PST 17:42
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  16-01-2021 PST 17:42
+{INFO}  com.app.main.bankingMain      2)Customer login  16-01-2021 PST 17:42
+{INFO}  com.app.main.bankingMain      3)Employee Login  16-01-2021 PST 17:42
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 17:42
+{INFO}  com.app.main.bankingMain        Employee Login  16-01-2021 PST 17:42
+{INFO}  com.app.main.bankingMain     Enter your email.  16-01-2021 PST 17:42
+{INFO}  com.app.main.bankingMain   Enter your password  16-01-2021 PST 17:42
+{INFO}  com.app.main.bankingMain         Employee Menu  16-01-2021 PST 17:42
+{INFO}  com.app.main.bankingMain  1)View customers' balances  16-01-2021 PST 17:42
+{INFO}  com.app.main.bankingMain  2)View all transactions  16-01-2021 PST 17:42
+{INFO}  com.app.main.bankingMain  3)Delete a customer account  16-01-2021 PST 17:42
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 17:42
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain  Please select a choice.  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain      2)Customer login  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain      3)Employee Login  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain        Customer Login  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain     Enter your email.  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain   Enter your password  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain        Customer Id: 1  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain     Account Number: 9  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain         Balance: 3641  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain         Customer Menu  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain        1)View Balance  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain       2)Deposit money  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain      3)Withdraw money  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain          4)Send money  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain       5)Receive money  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain                6)Exit  16-01-2021 PST 17:52
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain  Please select a choice.  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain      2)Customer login  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain      3)Employee Login  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain        Customer Login  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain     Enter your email.  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain   Enter your password  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain        Customer Id: 1  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain     Account Number: 9  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain         Balance: 3641  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain         Customer Menu  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain        1)View Balance  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain       2)Deposit money  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain      3)Withdraw money  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain          4)Send money  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain       5)Receive money  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain                6)Exit  16-01-2021 PST 17:57
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain  Please select a choice.  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain      2)Customer login  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain      3)Employee Login  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain        Customer Login  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain     Enter your email.  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain   Enter your password  16-01-2021 PST 18:17
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl  Username and password do not match  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain        Customer Id: 1  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain     Account Number: 9  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain         Balance: 3641  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain         Customer Menu  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain        1)View Balance  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain       2)Deposit money  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain      3)Withdraw money  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain          4)Send money  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain       5)Receive money  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain                6)Exit  16-01-2021 PST 18:17
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain  Please select a choice.  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain      2)Customer login  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain      3)Employee Login  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain        Customer Login  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain     Enter your email.  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain   Enter your password  16-01-2021 PST 19:52
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl  Username and password do not match  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain        Customer Login  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain     Enter your email.  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain   Enter your password  16-01-2021 PST 19:52
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl  Username and password do not match  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain        Customer Login  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain     Enter your email.  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain   Enter your password  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain  Customer [customerId=1, customerFirstName=null, customerLastName=null, customerAge=null, customerEmail=email, customerPassword=pass, customerDob=null, AccountBalance=0, AccountNumber=0]  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain        Customer Id: 1  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain     Account Number: 9  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain         Balance: 3641  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain         Customer Menu  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain        1)View Balance  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain       2)Deposit money  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain      3)Withdraw money  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain          4)Send money  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain       5)Receive money  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain                6)Exit  16-01-2021 PST 19:52
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  16-01-2021 PST 19:57
+{INFO}  com.app.main.bankingMain  Please select a choice.  16-01-2021 PST 19:57
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  16-01-2021 PST 19:57
+{INFO}  com.app.main.bankingMain      2)Customer login  16-01-2021 PST 19:57
+{INFO}  com.app.main.bankingMain      3)Employee Login  16-01-2021 PST 19:57
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 19:57
+{INFO}  com.app.main.bankingMain        Employee Login  16-01-2021 PST 19:57
+{INFO}  com.app.main.bankingMain     Enter your email.  16-01-2021 PST 19:57
+{INFO}  com.app.main.bankingMain   Enter your password  16-01-2021 PST 19:57
+{INFO}  com.app.main.bankingMain        Employee Login  16-01-2021 PST 19:57
+{INFO}  com.app.main.bankingMain     Enter your email.  16-01-2021 PST 19:57
+{INFO}  com.app.main.bankingMain   Enter your password  16-01-2021 PST 20:01
+{INFO}  com.app.main.bankingMain        Employee Login  16-01-2021 PST 20:01
+{INFO}  com.app.main.bankingMain     Enter your email.  16-01-2021 PST 20:01
+{INFO}  com.app.main.bankingMain   Enter your password  16-01-2021 PST 20:02
+{INFO}  com.app.main.bankingMain  Employee [employeeId=0, firstName=java, lastName=coder, email=javacoder@email, password=java]  16-01-2021 PST 20:02
+{INFO}  com.app.main.bankingMain         Employee Menu  16-01-2021 PST 20:02
+{INFO}  com.app.main.bankingMain  1)View customers' balances  16-01-2021 PST 20:02
+{INFO}  com.app.main.bankingMain  2)View all transactions  16-01-2021 PST 20:02
+{INFO}  com.app.main.bankingMain  3)Delete a customer account  16-01-2021 PST 20:02
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 20:02
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  16-01-2021 PST 20:11
+{INFO}  com.app.main.bankingMain  Please select a choice.  16-01-2021 PST 20:11
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  16-01-2021 PST 20:11
+{INFO}  com.app.main.bankingMain      2)Customer login  16-01-2021 PST 20:11
+{INFO}  com.app.main.bankingMain      3)Employee Login  16-01-2021 PST 20:11
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 20:11
+{INFO}  com.app.main.bankingMain        Employee Login  16-01-2021 PST 20:11
+{INFO}  com.app.main.bankingMain     Enter your email.  16-01-2021 PST 20:11
+{INFO}  com.app.main.bankingMain   Enter your password  16-01-2021 PST 20:11
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl  Username and password do not match  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain        Employee Login  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain     Enter your email.  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain   Enter your password  16-01-2021 PST 20:12
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl  Username and password do not match  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain        Employee Login  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain     Enter your email.  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain   Enter your password  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  Employee [employeeId=0, firstName=java, lastName=coder, email=javacoder@email, password=java]  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain         Employee Menu  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  1)View customers' balances  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  2)View all transactions  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  3)Delete a customer account  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  View customers' balances  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain         Employee Menu  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  1)View customers' balances  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  2)View all transactions  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  3)Delete a customer account  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain                  Exit  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  Please select a choice.  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain      2)Customer login  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain      3)Employee Login  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain                4)Exit  16-01-2021 PST 20:12
+{INFO}  com.app.main.bankingMain                  Exit  16-01-2021 PST 20:12

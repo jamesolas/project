@@ -5,6 +5,7 @@ import java.util.List;
 import com.app.exception.BusinessException;
 import com.app.model.Customer;
 import com.app.model.CustomerAccount;
+import com.app.model.CustomerRequests;
 import com.app.model.Employee;
 import com.app.model.TransactionRequests;
 import com.app.model.Transactions;
@@ -24,5 +25,9 @@ public interface CustomerSearchService {
 	public List<Customer>viewCustomerBalances() throws BusinessException;
 	public List<Transactions>viewAllTransactions() throws BusinessException;
 	
-	//public long getTransaction
+	public List<CustomerRequests>viewCustomerRequests() throws BusinessException;
+	
+	//public long findSenderId(long sendingAccountNumber) throws BusinessException;
+	//public long findReceiverId(long receiverAccountNumber) throws BusinessException;
+	
 }

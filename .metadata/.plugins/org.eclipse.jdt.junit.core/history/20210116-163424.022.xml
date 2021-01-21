@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CustomerSearchDAOImplTest" project="banking_app" tests="9" started="9" failures="0" errors="0" ignored="0">
+  <testsuite name="com.app.dao.impl.CustomerSearchDAOImplTest" time="0.473" displayname="CustomerSearchDAOImplTest" uniqueid="[engine:junit-jupiter]/[class:com.app.dao.impl.CustomerSearchDAOImplTest]">
+    <testcase name="testGetSenderId" classname="com.app.dao.impl.CustomerSearchDAOImplTest" time="0.1" displayname="testGetSenderId()" uniqueid="[engine:junit-jupiter]/[class:com.app.dao.impl.CustomerSearchDAOImplTest]/[method:testGetSenderId()]"/>
+    <testcase name="testGetDate" classname="com.app.dao.impl.CustomerSearchDAOImplTest" time="0.026" displayname="testGetDate()" uniqueid="[engine:junit-jupiter]/[class:com.app.dao.impl.CustomerSearchDAOImplTest]/[method:testGetDate()]"/>
+    <testcase name="testFindAccountNumber" classname="com.app.dao.impl.CustomerSearchDAOImplTest" time="0.025" displayname="testFindAccountNumber()" uniqueid="[engine:junit-jupiter]/[class:com.app.dao.impl.CustomerSearchDAOImplTest]/[method:testFindAccountNumber()]"/>
+    <testcase name="testGetSenderAccount" classname="com.app.dao.impl.CustomerSearchDAOImplTest" time="0.037" displayname="testGetSenderAccount()" uniqueid="[engine:junit-jupiter]/[class:com.app.dao.impl.CustomerSearchDAOImplTest]/[method:testGetSenderAccount()]"/>
+    <testcase name="testFindBalance" classname="com.app.dao.impl.CustomerSearchDAOImplTest" time="0.027" displayname="testFindBalance()" uniqueid="[engine:junit-jupiter]/[class:com.app.dao.impl.CustomerSearchDAOImplTest]/[method:testFindBalance()]"/>
+    <testcase name="testFindCustomerId" classname="com.app.dao.impl.CustomerSearchDAOImplTest" time="0.027" displayname="testFindCustomerId()" uniqueid="[engine:junit-jupiter]/[class:com.app.dao.impl.CustomerSearchDAOImplTest]/[method:testFindCustomerId()]"/>
+    <testcase name="testGetAmount" classname="com.app.dao.impl.CustomerSearchDAOImplTest" time="0.032" displayname="testGetAmount()" uniqueid="[engine:junit-jupiter]/[class:com.app.dao.impl.CustomerSearchDAOImplTest]/[method:testGetAmount()]"/>
+    <testcase name="testGetSendingAccount" classname="com.app.dao.impl.CustomerSearchDAOImplTest" time="0.039" displayname="testGetSendingAccount()" uniqueid="[engine:junit-jupiter]/[class:com.app.dao.impl.CustomerSearchDAOImplTest]/[method:testGetSendingAccount()]"/>
+    <testcase name="testGetReceiverId" classname="com.app.dao.impl.CustomerSearchDAOImplTest" time="0.16" displayname="testGetReceiverId()" uniqueid="[engine:junit-jupiter]/[class:com.app.dao.impl.CustomerSearchDAOImplTest]/[method:testGetReceiverId()]"/>
+  </testsuite>
+</testrun>
