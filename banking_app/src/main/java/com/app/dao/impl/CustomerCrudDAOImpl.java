@@ -4,8 +4,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Date;
-
 import org.apache.log4j.Logger;
 
 import com.app.dao.CustomerCrudDAO;
@@ -181,7 +179,8 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 						customer.setCustomerId(resultSet2.getInt("customerid"));
 						
 						long customerId = customer.getCustomerId();
-						log.info("customer Id: "+customerId);					
+						log.info("customer Id: "+customerId);			
+					}
 						
 						d = preparedStatement.executeUpdate();
 						
@@ -197,7 +196,7 @@ public class CustomerCrudDAOImpl implements CustomerCrudDAO {
 							ResultSet resultSet3 = preparedStatement3.executeQuery();
 							f = preparedStatement.executeUpdate();
 						}											
-					}
+					
 				}
 				}else {
 				throw new BusinessException("No incoming money transfer found with account number " + receivingAccount);

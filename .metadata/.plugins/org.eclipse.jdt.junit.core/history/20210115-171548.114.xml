@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="CustomerSearchServiceImplTest" project="banking_app" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.app.service.impl.CustomerSearchServiceImplTest" time="0.026" displayname="CustomerSearchServiceImplTest" uniqueid="[engine:junit-jupiter]/[class:com.app.service.impl.CustomerSearchServiceImplTest]">
-    <testcase name="testCustomerLogin" classname="com.app.service.impl.CustomerSearchServiceImplTest" time="0.026" displayname="testCustomerLogin()" uniqueid="[engine:junit-jupiter]/[class:com.app.service.impl.CustomerSearchServiceImplTest]/[method:testCustomerLogin()]"/>
-  </testsuite>
-</testrun>

@@ -37,6 +37,7 @@ public class bankingMain {
 		CustomerCrudService customerCrudService = new CustomerCrudServiceImpl();
 		CustomerSearchService customerSearchService = new CustomerSearchServiceImpl();
 		
+		
 		Scanner sc = new Scanner(System.in);
 		log.info("Welcome to Bank of Java.");
 		int ch = 0;
@@ -103,7 +104,7 @@ public class bankingMain {
 						try {
 							customerDob = sdf.parse(dateInput);
 						}catch(ParseException e) {
-							System.out.println("invalid date");	
+							log.info("invalid date");	
 						}
 						}else {
 						log.info("Invalid date");
@@ -393,10 +394,7 @@ public class bankingMain {
 				//code to service for logging in
 				try {
 					employee = customerSearchService.employeeLogin(employeeEmail, employeePassword);
-					
-					//List<Customerlist> = new Array();
 				} catch (BusinessException e1) {
-					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				  }
 				}

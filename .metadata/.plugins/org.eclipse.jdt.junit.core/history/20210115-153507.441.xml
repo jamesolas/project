@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="CustomerAccountTest" project="banking_app" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.app.model.CustomerAccountTest" time="0.031" displayname="CustomerAccountTest" uniqueid="[engine:junit-jupiter]/[class:com.app.model.CustomerAccountTest]">
-    <testcase name="testGetAccountNumber" classname="com.app.model.CustomerAccountTest" time="0.031" displayname="testGetAccountNumber()" uniqueid="[engine:junit-jupiter]/[class:com.app.model.CustomerAccountTest]/[method:testGetAccountNumber()]"/>
-  </testsuite>
-</testrun>

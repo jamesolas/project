@@ -20,9 +20,10 @@ public class CustomerSearchServiceImpl implements CustomerSearchService {
 	
 	CustomerSearchDAOImpl dao = new CustomerSearchDAOImpl();
 	private CustomerSearchDAO customerSearchDAO = new CustomerSearchDAOImpl();
-	
 	private static Logger log = Logger.getLogger(CustomerSearchServiceImpl.class);
 
+	
+	
 	@Override
 	public Customer customerLogin(String customerEmail, String customerPassword) throws BusinessException {
 		Customer customer = null;

@@ -1016,3 +1016,114 @@
 {INFO}  com.app.main.bankingMain  5)Accept a new customer request  20-01-2021 PST 18:14
 {INFO}  com.app.main.bankingMain  6)Reject a new customer request  20-01-2021 PST 18:14
 {INFO}  com.app.main.bankingMain                7)Exit  20-01-2021 PST 18:14
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  28-01-2021 PST 18:07
+{INFO}  com.app.main.bankingMain  Please select a choice.  28-01-2021 PST 18:07
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  28-01-2021 PST 18:07
+{INFO}  com.app.main.bankingMain      2)Customer login  28-01-2021 PST 18:07
+{INFO}  com.app.main.bankingMain      3)Employee Login  28-01-2021 PST 18:07
+{INFO}  com.app.main.bankingMain                4)Exit  28-01-2021 PST 18:07
+{INFO}  com.app.main.bankingMain  Enter your first name.  28-01-2021 PST 18:07
+{INFO}  com.app.main.bankingMain  Please enter the customer's first name.  28-01-2021 PST 18:08
+{INFO}  com.app.main.bankingMain  Enter your last name.  28-01-2021 PST 18:08
+{INFO}  com.app.main.bankingMain  Please enter the customer's last name.  28-01-2021 PST 18:08
+{INFO}  com.app.main.bankingMain  Enter your email address.  28-01-2021 PST 18:08
+{INFO}  com.app.main.bankingMain  Please enter an email address.  28-01-2021 PST 18:08
+{INFO}  com.app.main.bankingMain     Enter a password.  28-01-2021 PST 18:08
+{INFO}  com.app.main.bankingMain  Please enter a password.  28-01-2021 PST 18:08
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  28-01-2021 PST 18:08
+{INFO}  com.app.main.bankingMain          Invalid date  28-01-2021 PST 18:08
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  28-01-2021 PST 18:08
+{INFO}  com.app.main.bankingMain          Invalid date  28-01-2021 PST 18:08
+{INFO}  com.app.main.bankingMain  Enter your date of birth.  28-01-2021 PST 18:08
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  30-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain  Please select a choice.  30-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  30-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain      2)Customer login  30-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain      3)Employee Login  30-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain                4)Exit  30-01-2021 PST 14:19
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  01-02-2021 PST 16:03
+{INFO}  com.app.main.bankingMain  Please select a choice.  01-02-2021 PST 16:03
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  01-02-2021 PST 16:03
+{INFO}  com.app.main.bankingMain      2)Customer login  01-02-2021 PST 16:03
+{INFO}  com.app.main.bankingMain      3)Employee Login  01-02-2021 PST 16:03
+{INFO}  com.app.main.bankingMain                4)Exit  01-02-2021 PST 16:03
+{INFO}  com.app.main.bankingMain  Enter your first name.  01-02-2021 PST 16:03
+{INFO}  com.app.main.bankingMain  Please enter the customer's first name.  01-02-2021 PST 16:03
+{INFO}  com.app.main.bankingMain  Enter your last name.  01-02-2021 PST 16:03
+{INFO}  com.app.main.bankingMain  Please enter the customer's last name.  01-02-2021 PST 16:03
+{INFO}  com.app.main.bankingMain  Enter your email address.  01-02-2021 PST 16:03
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  01-02-2021 PST 19:30
+{INFO}  com.app.main.bankingMain  Please select a choice.  01-02-2021 PST 19:30
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  01-02-2021 PST 19:30
+{INFO}  com.app.main.bankingMain      2)Customer login  01-02-2021 PST 19:30
+{INFO}  com.app.main.bankingMain      3)Employee Login  01-02-2021 PST 19:30
+{INFO}  com.app.main.bankingMain                4)Exit  01-02-2021 PST 19:30
+{INFO}  com.app.main.bankingMain        Employee Login  01-02-2021 PST 19:30
+{INFO}  com.app.main.bankingMain     Enter your email.  01-02-2021 PST 19:30
+{INFO}  com.app.main.bankingMain   Enter your password  01-02-2021 PST 19:30
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl  Username and password do not match  01-02-2021 PST 19:30
+{INFO}  com.app.main.bankingMain        Employee Login  01-02-2021 PST 19:30
+{INFO}  com.app.main.bankingMain     Enter your email.  01-02-2021 PST 19:30
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  02-02-2021 PST 19:29
+{INFO}  com.app.main.bankingMain  Please select a choice.  02-02-2021 PST 19:29
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  02-02-2021 PST 19:29
+{INFO}  com.app.main.bankingMain      2)Customer login  02-02-2021 PST 19:29
+{INFO}  com.app.main.bankingMain      3)Employee Login  02-02-2021 PST 19:29
+{INFO}  com.app.main.bankingMain                4)Exit  02-02-2021 PST 19:29
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  04-02-2021 PST 15:37
+{INFO}  com.app.main.bankingMain  Please select a choice.  04-02-2021 PST 15:37
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  04-02-2021 PST 15:37
+{INFO}  com.app.main.bankingMain      2)Customer login  04-02-2021 PST 15:37
+{INFO}  com.app.main.bankingMain      3)Employee Login  04-02-2021 PST 15:37
+{INFO}  com.app.main.bankingMain                4)Exit  04-02-2021 PST 15:37
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  09-02-2021 PST 17:40
+{INFO}  com.app.main.bankingMain  Please select a choice.  09-02-2021 PST 17:40
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  09-02-2021 PST 17:40
+{INFO}  com.app.main.bankingMain      2)Customer login  09-02-2021 PST 17:40
+{INFO}  com.app.main.bankingMain      3)Employee Login  09-02-2021 PST 17:40
+{INFO}  com.app.main.bankingMain                4)Exit  09-02-2021 PST 17:40
+{INFO}  com.app.main.bankingMain        Customer Login  09-02-2021 PST 17:40
+{INFO}  com.app.main.bankingMain     Enter your email.  09-02-2021 PST 17:40
+{INFO}  com.app.main.bankingMain   Enter your password  09-02-2021 PST 17:40
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl  Username and password do not match  09-02-2021 PST 17:40
+{INFO}  com.app.main.bankingMain        Customer Login  09-02-2021 PST 17:40
+{INFO}  com.app.main.bankingMain     Enter your email.  09-02-2021 PST 17:40
+{INFO}  com.app.main.bankingMain   Enter your password  09-02-2021 PST 21:44
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl  Username and password do not match  09-02-2021 PST 21:44
+{INFO}  com.app.main.bankingMain        Customer Login  09-02-2021 PST 21:44
+{INFO}  com.app.main.bankingMain     Enter your email.  09-02-2021 PST 21:44
+{INFO}  com.app.main.bankingMain   Enter your password  09-02-2021 PST 21:44
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl  Username and password do not match  09-02-2021 PST 21:44
+{INFO}  com.app.main.bankingMain        Customer Login  09-02-2021 PST 21:44
+{INFO}  com.app.main.bankingMain     Enter your email.  09-02-2021 PST 21:44
+{INFO}  com.app.main.bankingMain   Enter your password  09-02-2021 PST 21:45
+{INFO}  com.app.service.impl.CustomerSearchServiceImpl  Username and password do not match  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain        Customer Login  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain     Enter your email.  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  Welcome to Bank of Java.  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  Please select a choice.  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  1)Apply for a new account  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain      2)Customer login  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain      3)Employee Login  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain                4)Exit  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain        Employee Login  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain     Enter your email.  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain   Enter your password  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  Employee [employeeId=0, firstName=java, lastName=coder, email=javacoder@email, password=java]  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain         Employee Menu  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  1)View customers' balances  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  2)View all transactions  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  3)Delete a customer account  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  4)View new customer requests  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  5)Accept a new customer request  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  6)Reject a new customer request  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain                7)Exit  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  View customers' balances  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain         Employee Menu  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  1)View customers' balances  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  2)View all transactions  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  3)Delete a customer account  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  4)View new customer requests  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  5)Accept a new customer request  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain  6)Reject a new customer request  09-02-2021 PST 21:45
+{INFO}  com.app.main.bankingMain                7)Exit  09-02-2021 PST 21:45

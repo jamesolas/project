@@ -29,6 +29,8 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO {
 	
 	private static Logger log = Logger.getLogger(CustomerSearchServiceImpl.class);
 	
+	
+	
 	@Override
 	public Customer customerLogin(String customerEmail, String customerPassword) throws BusinessException {
 		Customer customer = null;
@@ -45,15 +47,15 @@ public class CustomerSearchDAOImpl implements CustomerSearchDAO {
 				customer.setCustomerEmail(customerEmail);
 				customer.setCustomerPassword(customerPassword);	
 				customer.setCustomerId(resultSet.getLong("customerid"));
-		}else {
+			}else {
 			//throw new BusinessException("Username and password do not match");
 			log.info("Username and password do not match");
-		}
-		}catch(ClassNotFoundException | SQLException e){
+			}
+			}catch(ClassNotFoundException | SQLException e){
 			log.info(e);
 			throw new BusinessException("Internal error occurred.");
-		}
-		return customer;
+			}
+			return customer;
 	}
 
 	@Override
